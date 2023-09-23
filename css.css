@@ -1057,23 +1057,19 @@ line-height: 1}
 .head{margin: 0px;display: grid;
 ;grid-template-columns: repeat(1,1fr); }
 
-.top p{font-family: 'Stick No Bills', sans-serif; 
-		padding: 5px;
-	 font-size: 22px;
-	 padding-top: 20px ;
-	 text-align: center;
-	 color: white;
-	 display: none;}
+.top p{
+	 display: none;
+		}
 
 
-.top img{width: 200px;
+.top img{width: 150px;
 height: 6vh}
 
 .top h4{  
 	font-family: 'Carter One', cursive; 
 		padding: 3px;
 		background: rgba(204, 16, 16,0.7) ;
-		width: 20%; font-size: 15px }
+	width:100px; font-size: 15px }
 
 .social {display: flex; margin-left: 1% ;
 		margin-top:0vh;}
@@ -1086,30 +1082,35 @@ height: 6vh}
 align-items: center; justify-content: center;
 width: 100vw;
 margin: auto;
-height: 350px}
+height: 300px}
 
 .container ul {padding: 0;
 	display: flex;
 	 overflow: hidden;
 animation: slider 20s infinite;
-height: 350px}
+height: 300px}
 
 .ul-slider li {width: 100vw;
 list-style: none; 
 height: 350px}
 
 
+
+
 .ul-slider li img{ width: 100vw;
-	height: 350px;
+	height: 300px;
 position:center}
 
+.banner-news ul{padding-left: 0%;}
+
 .banner-news li { display: inline-block;
-padding: 10px}
+padding: 10px 0px}
 
 .banner-news li a{  
-font-size: 16px;
+font-size: 13px;
 font-family: 'Stick No Bills', sans-serif;
-; color:  white}
+; color:  white;
+padding: 0px 3px}
 
 .primeras{display: grid;
 grid-template-columns: repeat(1,1fr);
@@ -1236,21 +1237,21 @@ color: black;margin-top:0p;
   .informacion a h3 {
   font-family: 'Stick No Bills  ', sans-serif;
   color: black;
-    font-size: 18px;
+    font-size: 20px;
     text-decoration:none ;
     width: 80%;  }
   
   .informacion p{font-size:15px;
     color: black;
-    padding: 15px 0vh;
+    padding: 18px 0vh;
     width: 90%; }
 
-  .informacion h6{font-size:13px;
+  .informacion h6{font-size:15px;
     color: gray;
     padding: 0vh;
     font-family: Monospace;}
 
-  .late{ margin: 20px auto; width: 80% ;
+  .late{ margin: 20px auto; width: 90% ;
 margin-left: 0%
 ;margin: 0 auto}
 
@@ -1262,9 +1263,7 @@ justify-content: center;
 align-items: center;}
 
 
-
-
-.late a .img1 {width: 100%; padding: 2vh 0px; height:35vh;
+.late a .img1 {width: 100%; padding: 20px 0px; height:35vh;
 margin: 0 auto;display: flex;
 justify-content: center;
 align-items: center;}
