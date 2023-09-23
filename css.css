@@ -1,0 +1,1420 @@
+*{margin: 0; padding: 0;
+box-sizing: border-box;}
+
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Poor+Story&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap');
+
+html , body{ max-width: 100% !important;
+    overflow-x: hidden !important;}
+
+html::-webkit-scrollbar{width: 0.5vh ;}
+
+html::-webkit-scrollbar-thumb{
+	background:#006A4E;}
+
+
+html::-webkit-scrollbar-thumb:hover{
+	background:green;}
+
+body{width:;
+margin: 0 auto;}
+
+@font-face{font-family:TypoQuik_Light_Italic_Demo;
+src:url(TraditionSansXLight.otf)}
+
+.top {
+;	 background: url(img/463-verde-degradado.png);
+	 background-size: cover;}
+
+.head{	 max-width: 1800px;
+margin: 0 auto;
+grid-template-columns: repeat(3,1fr); 
+display: grid; }
+
+.top h4{font-family: 'Carter One', cursive; 
+		padding: 5px;
+		background: rgba(204, 16, 16,0.9);
+		width:150px;
+	 border-radius:0px 20px 20px 0px ;
+	 font-size: 18px }
+
+
+.top p{font-family: 'Stick No Bills', sans-serif; 
+		padding: 10px;
+	 font-size: 20px;
+	 padding-top: 20px ;
+	 text-align: center;
+	 color: white}
+
+
+.top .social { 
+	display:flex;
+padding:20px 10px;
+text-align: right;
+justify-content:right;
+align-items:right}
+
+.social a{ color:white; 
+text-decoration: none;
+		font-size:30px;
+		padding:10px }
+
+.social a:hover{
+  cursor: pointer;
+	color: red;
+transition: all 1s ease;}
+
+.cabezera{; display: flex; 
+color: #ffff;  justify-content: center;
+margin: 0px auto; padding: 100px 0px; 
+background: rgb(17, 19, 17);border-bottom: 5px solid rgb(84, 156, 91)}
+
+.top img{  margin-left: 2% ;
+width: 300px;}
+
+.container {
+padding: 0px ;  
+margin: 0 auto;
+align-items: center;   
+justify-content: center;
+width: 100%;
+margin: auto;
+height: 425px;
+max-width: 1800px;
+overflow: hidden;}
+
+
+.container ul {padding: 0;
+	display: flex;
+	 overflow: hidden;
+animation: slider 16s infinite;
+}
+
+.ul-slider li {
+list-style: none;
+width:99.9vw;
+max-width: 1800px;
+padding: 0px;
+margin: 0px}
+
+.ul-slider li img{
+	height: 425px;
+position:center;
+width:99.9vw;
+max-width: 1800px;
+padding: 0px;
+margin: 0px}
+
+
+@keyframes slider{ 
+	0%{margin-left: 0%} 
+	20%{margin-left:0%} 
+
+	25%{margin-left: -0%} 
+	45%{margin-left: -100%} 
+
+	50%{margin-left: -100%} 
+	70%{margin-left: -200%}
+	
+	75%{margin-left: -200%} 
+	100%{margin-left:-300%} 
+	}
+
+
+.banner-news{background: url(img/463-verde-degradado.png)   
+		; background-size: cover;
+		padding: 0px 20px}
+
+.banner-news ul{padding-left: 2%;
+max-width: 1800px;
+margin: 0 auto}
+
+.banner-news li { display: inline-block;
+padding: 20px 10px
+}
+
+.banner-news li a{ 
+font-size: 20px;
+font-family: 'Stick No Bills', sans-serif;
+  color: white;
+  text-decoration: none;}
+
+.banner-news li:hover{ 
+background: rgb(17, 132, 110) ;
+	color: rgb(17, 232, 110)}
+
+/* Banner de noticias*/
+
+.primeras{display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-gap: 2vh;
+  width: 99%;
+  margin: 0 auto;
+height: 370px;
+max-width: 1800px}
+
+.not{	width: 130%;
+    position: relative;
+    ; height: 370px; 
+    margin: 2.5% 0.5%; }
+
+.not  a img{width: 100%;
+height:370px;position:absolute;
+padding: 0px; margin: 0px}
+
+.not .capa{position: relative;
+margin-left: 3%}
+
+.not .capa h6{font-family: 'Stick No Bills  ', sans-serif;
+font-size: 25px;
+background: rgba(64,97,117,1);
+width: 220px;
+margin-top: 150px;
+  color: white;
+padding: 10px 5px}
+
+.not .capa a{text-decoration:none;
+  color: white;}
+
+.not .capa a h6{font-family: Verdana;
+font-size: 20px;
+background: none;
+margin-top: 10px ;
+width:90%;
+padding: 0vh}
+
+.not .capa a h6:hover{
+color: rgb(17, 232, 210)}
+
+.not .capa p{font-family: Verdana;
+font-size: 18px;
+  margin-top:10px ;
+  color: white;}
+
+.not:hover {transition: transform .2s;  
+transform: scale(1.02); 
+box-shadow: 0vh 0vh 20px black}
+
+.notd1{
+ margin: 2.5% 0px;
+margin-left: 30% ;
+position: relative;}
+
+.notd1 a img{width: 100%;
+position: absolute;
+;height: 175px}
+
+.capa2{position: relative;
+}
+
+.capa2 a {text-decoration:none}
+
+.capa2 a h6{font-family: 'Stick No Bills  ', sans-serif;
+font-size: 20px;
+background: rgba(64,97,117,1);
+width: 100%;
+  color: white;
+  padding: 10px
+}
+  
+.capa2 a h6:hover{color: rgb(17, 232, 210)}
+
+
+.notd1:hover {transition: transform .2s;  
+transform: scale(1.02); 
+box-shadow: 0vh 0vh 5vh black}
+
+
+.notd1{
+ margin: 2.5% 0px;
+margin-left: 30% ;
+position: relative;}
+
+
+.notd2{
+ margin: 5% 0%; 
+margin-left: 30% ;
+position: relative;
+  margin-top: 150px ;}
+
+
+
+.notd2 a img{width: 100%;
+position: absolute;
+;height: 175px;}
+
+
+.notd2:hover {transition: transform .2s;  
+transform: scale(1.02); 
+box-shadow: 0vh 0vh 5vh black}
+
+
+.all{ display:grid;
+	grid-template-columns: repeat(2,1fr);
+	 margin-top: 3%;
+	width: 98%;
+	margin: 0 auto;
+max-width: 1600px}
+
+.ne{max-width: 1800px;
+margin: 0 auto}
+
+	.ne h5 {color:rgb(15, 198, 103);
+	 background: rgba(8, 29, 18,0.7);
+	 text-align: center;
+	 padding:10px ;
+	 border-radius: 10px;
+	margin: 20px;
+width:200px;
+font-size: 15px;
+font-family: 'Stick No Bills  ', sans-serif;
+margin-left: 5%;
+margin-top: 3%}
+
+
+.artic {display:flex; 
+		width:148% ;
+  margin: 30px 0; 
+  padding: 0;}
+
+.artic .img a{text-decoration: none;
+cursor: pointer;}
+
+.artic .img a h6{font-family: 'Stick No Bills  ', sans-serif;
+font-size: 20px;
+background: rgba(64,97,117,1);
+width:100%;
+  color: white;
+  padding: 10px 15px;;
+margin-top: 15px}
+ 
+
+.artic .img a h6:hover{color:rgb(175, 198, 103);}
+ 
+
+.artic a img {display: block; 
+		padding: 0px;
+		margin: 0px;
+		width:300px; 
+		height: 140px;
+		padding-top: 
+		;max-width: 500px}
+
+
+		
+.informacion {margin-left: 20px;
+color: black;
+  text-decoration-line: none;
+  text-decoration: none;
+  text-decoration-color: none;
+  margin-top: 20px}
+
+.informacion a {
+  color: black;  
+  text-decoration: none  }
+  
+  .informacion a h3 {
+  font-family: 'Stick No Bills  ', sans-serif;
+  color: black;
+    font-size: 23px;
+    text-decoration:none ;
+    width: 90%;  }
+
+ .informacion a h3:hover{color:rgb(15, 198, 103);}
+ 
+  .informacion p{font-size:20px;
+    color: black;
+    padding-top: 10px;
+    width: 90%; font-family: Verdana;}
+    
+  .informacion h6{font-size:18px;
+    color: green;
+    padding: 10px 0vh;
+    font-family: Monospace;}
+    
+
+.late{ margin: 20px auto; width: 50% ;
+margin-left: 50%}
+
+
+.late a img {width: 100%; padding: 2vh 0px; height:150px;
+margin: 0 auto;display: flex;
+justify-content: center;
+align-items: center;}
+
+
+#mrrobot img{font-family: 'Stick No Bills  ', sans-serif;
+  color: black;
+    font-size: 3.3vh;
+padding-top: 50px;
+width: 80%;
+height: 400px}
+
+.late a .img1 {width: 100%; padding: 2vh 0px;
+ height:320px;
+margin: 0 auto;display: flex;
+justify-content: center;
+align-items: center;}
+
+
+.lado  {width: 100% ; margin: 20px 1px;
+ background: rgba(26, 26, 50,1);
+  padding: 20px;}
+
+.lado span h6{ font-size: 20px; 
+	font-family:TypoQuik_Light_Italic_Demo;
+		color: rgb(226, 251, 240) }
+
+.lado span li{ font-size: 20px; 
+	font-family:TypoQuik_Light_Italic_Demo;
+	color:#52B830 ;
+	 padding: 5px 0vh;
+	 margin: 5px 0vh ;
+	 list-style: none;}
+
+.lado span li::before {
+  content: "+ ";
+  color: white;
+  font-size:20px}
+
+
+.cisco{width: 100%; margin: 10px auto;}
+
+.cisco  a img{width: 100%; height: 200px}
+
+
+.cisco h5{ font-size:20px;
+	font-family:TypoQuik_Light_Italic_Demo;
+	color: rgb(96, 51, 40) ; width: 100%;
+margin: 0 auto; justify-content: center;
+align-items: center;
+margin: 0 2%;
+	color: rgb(96, 151, 140)}
+
+.cisco p{ text-decoration: none; 
+	color: black; 
+	font-size:20px ;
+	font-family:TypoQuik_Light_Italic_Demo;
+	margin: 10px 2%;
+width: 100%}
+
+
+.recome{margin: 30px 0px; 
+	border: 0.3vh solid rgb(52, 196, 174);
+border-radius: 10px ; width: 100%;
+padding: 10px 5px}
+
+.recome h6{ 
+	font-family:TypoQuik_Light_Italic_Demo;
+font-size:23px;
+	color: rgb(96, 151, 140) ; 
+	width: 100%; ; justify-content: center;
+align-items: center;
+margin-bottom: 2vh}
+
+.recome li{ font-size: 20px
+	; line-height: 1.2;
+	font-family:TypoQuik_Light_Italic_Demo;
+	list-style: none;
+	 padding: 5px 0px;
+		margin: 0}
+
+
+.recome li::before {
+  content: "+ ";
+  color: rgb(96, 151, 140) ; 
+	;
+  font-size:20px}
+
+.grupo1{
+background: rgba(64,97,117,1);
+}
+
+.grupo11{display: grid;
+	 grid-template-columns: repeat(3,1fr);
+	max-width: 1800px ;
+margin: 0 auto}
+
+.sobre{ padding: 10px 0px;	
+		width: 100%;
+		 justify-content: center;
+		 margin: 10px 0px}
+
+
+.sobre h6 {text-align: center;
+		 color: #fff;
+ 		padding:1vh auto ; 
+ 		font-size: 20px; 
+ 		font-family: 'Stick No Bills', sans-serif;
+  margin-top:20px;
+letter-spacing: 1px}
+
+
+.sobre a{ color: #ffff ;
+		font-size: 20px; line-height: 1;
+	font-family:TypoQuik_Light_Italic_Demo; 
+     	text-align: center;
+     	margin: 10px auto;
+     	text-decoration: none;
+     	display: flex;
+     	align-items: center;
+     	justify-content: center;
+     }
+
+
+.sobre a:hover{ color: red;}
+
+
+
+
+.sobre p{ color: #ffff ;
+		font-size: 18px; line-height: 1.3;
+	font-family:verdana; 
+     	text-align: center;
+     	margin: 10px auto;
+     	width: 100%;}
+
+.sobre img{ 
+margin: 0vh auto;
+width: 350px ;
+display: flex;justify-content: center;
+align-items: center;;
+height: 100px;
+margin-top: 20px}
+		 
+.sobre .red-social{ display: grid;
+	grid-template-columns: repeat(5,1fr);
+	padding:  20px;
+		margin: 0 auto;
+		justify-content: center;
+		align-items: center;
+		 margin: 0 auto;
+		 width: 60%; color:white;
+		 grid-gap: 5px
+}
+
+.sobre .red-social a{
+		; font-size: 30px; 
+	justify-content: center;
+	align-items: center; 
+	margin: 0 auto; 
+	color: white;
+	background:#0a1a2a;
+padding: 10px;
+border-radius: 50%}
+
+.red-social a:hover{color :red;}
+	
+ .grupo2{
+background: rgb(30, 37, 37);
+ 	;padding: 20px 10px}
+
+
+.grupo22{max-width: 1800px ;
+margin: 0 auto}
+
+ .grupo2 h6{
+ 	font-size: 18px;
+ 	color: white;
+ 	text-align: left; 
+	font-family:TypoQuik_Light_Italic_Demo;
+	width: 90%;
+	margin-left: 2%}
+
+
+ .grupo2 h6 a{
+ 	font-size: 20px;
+ 	color: green;
+ 	text-align: left; 
+	font-family:TypoQuik_Light_Italic_Demo;
+text-decoration: none;}
+
+
+
+ .grupo2 h6 a:hover{
+ 	font-size: 20px;
+ 	color:red;
+ 	text-align: left; 
+	font-family:TypoQuik_Light_Italic_Demo;
+text-decoration: none;}
+	
+ .grupo2 p{
+ 	font-size: 15px;
+ 	color: white;
+	font-family:TypoQuik_Light_Italic_Demo;
+	padding: 0px;
+	width: 60%;
+	letter-spacing: 2px;
+	margin-left: 2%;
+	max-width: 800px}
+  
+ @media screen and (min-width: 550px) and (max-width: 1023px) 
+{
+
+.top {
+	 background: url(img/463-verde-degradado.png);
+	 background-size: cover;	}
+
+.head{margin: 0px;display: grid;
+;grid-template-columns: repeat(3,1fr); }
+
+.top h4{font-family: 'Carter One', cursive; 
+		padding: 5px;
+		background: rgba(204, 16, 16,0.9);
+		width:100px;
+	 border-radius:0px 20px 20px 0px ;
+	 font-size: 15px }
+
+.top .social { 
+	display:flex;
+padding: 10px;
+text-align: right;
+justify-content:right;
+align-items:right}
+
+.social a{ color:white; 
+text-decoration: none;
+		font-size:20px;
+		padding:10px }
+
+.social a:hover{
+  cursor: pointer;
+	color: red;
+transition: all 1s ease;}
+
+.cabezera{; display: flex; 
+color: #ffff;  justify-content: center;
+margin: 0px auto; padding: 100px 0px; 
+background: rgb(17, 19, 17);border-bottom: 5px solid rgb(84, 156, 91)}
+
+.top img{  margin-left: 2% ;
+width: 200px;}
+
+
+.top p{font-family: 'Stick No Bills', sans-serif; 
+		padding: 5px;
+	 font-size: 15px;
+	 padding-top: 20px ;
+	 text-align: center;
+	 color: white}
+
+
+.container {
+padding: 0px ;  
+margin: 0 auto;
+align-items: center;   
+justify-content: center;
+width: 100%;
+margin: auto;
+height: 300px;
+max-width: 1800px
+}
+
+
+.container ul {padding: 0;
+	display: flex;
+	 overflow: hidden;
+animation: slider 16s infinite;}
+
+.ul-slider li {
+list-style: none;
+width:99.9vw;
+max-width: 1800px;
+padding: 0px;
+margin: 0px}
+
+.ul-slider li img{
+	height: 300px;
+position:center;
+width:99.9vw;
+max-width: 1800px;
+padding: 0px;
+margin: 0px}
+
+
+@keyframes slider{ 
+	0%{margin-left: 0%} 
+	20%{margin-left:0%} 
+
+	25%{margin-left: -0%} 
+	45%{margin-left: -100%} 
+
+	50%{margin-left: -100%} 
+	70%{margin-left: -200%}
+	
+	75%{margin-left: -200%} 
+	100%{margin-left:-300%} 
+	}
+
+.banner-news{background: url(img/463-verde-degradado.png)   
+		; background-size: cover;
+		padding: 0px 20px}
+
+.banner-news ul{margin-left: 2%}
+
+.banner-news li { display: inline-block;
+padding: 10px
+}
+
+.banner-news li a{ 
+font-size: 15px;
+font-family: 'Stick No Bills', sans-serif;
+  color: white;
+  text-decoration: none;}
+
+.banner-news li:hover{ 
+background: rgb(17, 132, 110) ;
+	color: rgb(17, 232, 110)}
+
+	/* Banner de noticias*/
+
+.primeras{display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-gap: 2vh;
+  width: 99%;
+  margin: 0 auto;
+height: 250px;
+max-width: 1800px}
+
+.not{	width: 130%;
+    position: relative;
+    ; height: 250px; 
+    margin: 2.5% 0.5%; }
+
+.not  a img{width: 100%;
+height:250px;position:absolute;
+padding: 0px; margin: 0px}
+
+.not .capa{position: relative;
+margin-left: 3%}
+
+.not .capa h6{font-family: 'Stick No Bills  ', sans-serif;
+font-size: 17px;
+background: rgba(64,97,117,1);
+width: 160px;
+margin-top: 100px;
+  color: white;
+padding: 10px 5px}
+
+.not .capa a{text-decoration:none;
+  color: white;}
+
+.not .capa a h6{font-family: Verdana;
+font-size: 15px;
+background: none;
+margin-top: 10px ;
+width:90%;
+padding: 0vh}
+
+.not .capa a h6:hover{
+color: rgb(17, 232, 210)}
+
+.not .capa p{font-family: Verdana;
+font-size: 13px;
+  margin-top:10px ;
+  color: white;}
+
+.not:hover {transition: transform .2s;  
+transform: scale(1.02); 
+box-shadow: 0vh 0vh 20px black}
+
+.notd1{
+ margin: 2.5% 0px;
+margin-left: 30% ;
+position: relative;}
+
+.notd1 a img{width: 100%;
+position: absolute;
+;height: 120px}
+
+.capa2{position: relative;
+}
+
+.capa2 a {text-decoration:none}
+
+.capa2 a h6{font-family: 'Stick No Bills  ', sans-serif;
+font-size: 15px;
+background: rgba(64,97,117,1);
+width: 100%;
+  color: white;
+  padding: 10px
+}
+  
+.capa2 a h6:hover{color: rgb(17, 232, 210)}
+
+
+.notd1:hover {transition: transform .2s;  
+transform: scale(1.02); 
+box-shadow: 0vh 0vh 5vh black}
+
+
+.notd1{
+ margin: 2.5% 0px;
+margin-left: 30% ;
+position: relative;}
+
+
+.notd2{
+ margin: 5% 0%; 
+margin-left: 30% ;
+position: relative;
+  margin-top: 90px ;}
+
+
+
+.notd2 a img{width: 100%;
+position: absolute;
+;height: 125px;}
+
+
+.notd2:hover {transition: transform .2s;  
+transform: scale(1.02); 
+box-shadow: 0vh 0vh 5vh black}
+
+.all{ display:grid;
+	grid-template-columns: repeat(2,1fr);
+	 margin-top: 3%;
+	width: 98%;
+	margin: 0 auto;
+max-width: 1600px}
+
+
+	.ne h5 {color:rgb(15, 198, 103);
+	 background: rgba(8, 29, 18,0.7);
+	 text-align: center;
+	 padding:10px ;
+	 border-radius: 10px;
+	margin: 20px;
+width:200px;
+font-size: 15px;
+font-family: 'Stick No Bills  ', sans-serif;
+margin-left: 5%}
+
+
+.artic {display:flex; 
+		width:148% ;
+  margin: 10px 0; 
+  padding: 0;}
+
+.artic .img a{text-decoration: none;
+cursor: pointer;}
+
+.artic .img a h6{font-family: 'Stick No Bills  ', sans-serif;
+font-size: 15px;
+background: rgba(64,97,117,1);
+width:100%;
+  color: white;
+  padding: 10px 15px;;
+margin-top: 15px}
+ 
+
+.artic .img a h6:hover{color:rgb(15, 198, 103);}
+ 
+
+.artic a img {display: block; 
+		padding: 0px;
+		margin: 0px;
+		width:200px; 
+		height: 120px;
+		padding-top: 
+		;max-width: 500px}
+
+
+		
+.informacion {margin-left: 20px;
+color: black;
+  text-decoration-line: none;
+  text-decoration: none;
+  text-decoration-color: none;
+  margin-top: 20px}
+
+.informacion a {
+  color: black;  
+  text-decoration: none  }
+  
+  .informacion a h3 {
+  font-family: 'Stick No Bills  ', sans-serif;
+  color: black;
+    font-size: 15px;
+    text-decoration:none ;
+    width: 100%;  }
+
+ .informacion a h3:hover{color:rgb(15, 198, 103);}
+ 
+  .informacion p{font-size:14px;
+    color: black;
+    padding-top: 10px;
+    width: 90%; font-family: Verdana;}
+    
+  .informacion h6{font-size:13px;
+    color: rgb(12,56,23);
+    padding: 10px 0vh;
+    font-family: Monospace;}
+
+  .late{ margin: 20px auto; width: 50% ;
+margin-left: 50%}
+
+
+.late a img {width: 100%; padding: 2vh 0px; height:150px;
+margin: 0 auto;display: flex;
+justify-content: center;
+align-items: center;}
+
+
+#mrrobot img{font-family: 'Stick No Bills  ', sans-serif;
+  color: black;
+padding-top: 20px;
+width: 80%;
+height: 200px}
+
+.late a .img1 {width: 100%; padding: 2vh 0px;
+ height:200px;
+margin: 0 auto;display: flex;
+justify-content: center;
+align-items: center;}
+
+
+.lado  {width: 100% ; margin: 20px 1px;
+ background: rgba(26, 26, 50,1);
+  padding: 20px;}
+
+.lado span h6{ font-size: 15px; 
+	font-family:TypoQuik_Light_Italic_Demo;
+		color: rgb(226, 251, 240) }
+
+.lado span li{ font-size: 14px; 
+	font-family:TypoQuik_Light_Italic_Demo;
+	color:#52B830 ;
+	 padding: 5px 0vh;
+	 margin: 5px 0vh ;
+	 list-style: none;}
+
+.lado span li::before {
+  content: "+ ";
+  color: white;
+  font-size:15px}
+
+
+.cisco{width: 100%; margin: 10px auto;}
+
+.cisco  a img{width: 100%; height: 100px}
+
+
+.cisco h5{ font-size:15px;
+	font-family:TypoQuik_Light_Italic_Demo;
+	color: rgb(96, 51, 40) ; width: 100%;
+margin: 0 auto; justify-content: center;
+align-items: center;
+margin: 0 2%;
+	color: rgb(96, 151, 140)}
+
+.cisco p{ text-decoration: none; 
+	color: black; 
+	font-size:14px ;
+	font-family:TypoQuik_Light_Italic_Demo;
+	margin: 10px 2%;
+width: 100%}
+
+
+.recome{margin: 20px 0px; 
+	border: 0.3vh solid rgb(52, 196, 174);
+border-radius: 10px ; width: 100%;
+padding: 10px 5px}
+
+.recome h6{ 
+	font-family:TypoQuik_Light_Italic_Demo;
+font-size:18px;
+	color: rgb(96, 151, 140) ; 
+	width: 100%; ; justify-content: center;
+align-items: center;
+margin-bottom: 2vh}
+
+.recome li{ font-size: 15px
+	; line-height: 1.2;
+	font-family:TypoQuik_Light_Italic_Demo;
+	list-style: none;
+	 padding: 5px 0px;
+		margin: 0}
+
+
+.recome li::before {
+  content: "+ ";
+  color: rgb(96, 151, 140) ; 
+	;
+  font-size:20px}
+
+.grupo11{display: grid;
+	 grid-template-columns: repeat(3,1fr);}
+
+.sobre{ padding: 10px 0px;	
+		width: 100%;
+		 justify-content: center;
+		 margin: 10px 0px}
+
+
+.sobre h6 {text-align: center;
+		 color: #fff;
+ 		padding:10px auto ; 
+ 		font-size: 15px; 
+ 		font-family: 'Stick No Bills', sans-serif;
+  margin-top:10px}
+
+
+.sobre a{ color: #ffff ;
+		font-size: 14px; line-height: 1;
+	font-family:TypoQuik_Light_Italic_Demo; 
+     	text-align: center;
+     	margin: 10px auto;
+     	text-decoration: none;
+     	display: flex;
+     	align-items: center;
+     	justify-content: center;}
+
+
+.sobre a:hover{ color: red;}
+
+
+.sobre p{ color: #ffff ;
+		font-size: 14px; line-height: 1;
+	font-family:TypoQuik_Light_Italic_Demo; 
+     	text-align: center;
+     	margin: 10px auto}
+
+.sobre img{ 
+margin: 0px auto;
+width: 200px ;
+display: flex;justify-content: center;
+align-items: center;
+height: 60px}
+		 
+.sobre .red-social{ display: grid;
+	grid-template-columns: repeat(5,1fr);
+	padding: 10px;
+		margin: 0 auto;
+		justify-content: center;
+		align-items: center;
+		 margin: 0 auto;
+		 width: 60%; color:white}
+
+.sobre .red-social a{
+		; font-size: 20px; 
+	justify-content: center;
+	align-items: center; 
+	margin: 0 auto; 
+	color: white;}
+
+.red-social a:hover{color :red;}
+	
+ .grupo2{background-color: #0a1a2a;
+ 	padding: 20px}
+
+ .grupo2 h6{
+ 	font-size: 15px;
+ 	color: white;
+ 	margin: 0px auto;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+	width: 70%;
+	text-align: center; 
+	font-family:TypoQuik_Light_Italic_Demo;}
+
+
+
+ .grupo2 h6 a{
+ 	font-size: 15px;
+ 	color: green;
+ 	text-align: left; 
+	font-family:TypoQuik_Light_Italic_Demo;
+text-decoration: none;}
+
+
+ .grupo2 h6 a:hover{
+ 	font-size: 15px;}
+
+
+	
+ .grupo2 p{
+ 	font-size: 13px;
+ 	color: white;
+ 	margin: 0px auto;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+	width: 60%;
+	text-align: center; 
+	font-family:TypoQuik_Light_Italic_Demo;
+	padding: 0px;
+line-height: 1}
+
+}
+
+@media screen and (max-width: 549px)
+{
+
+
+.head{margin: 0px;display: grid;
+;grid-template-columns: repeat(1,1fr); }
+
+.top p{font-family: 'Stick No Bills', sans-serif; 
+		padding: 5px;
+	 font-size: 22px;
+	 padding-top: 20px ;
+	 text-align: center;
+	 color: white;
+	 display: none;}
+
+
+.top img{width: 200px;
+height: 6vh}
+
+.top h4{  
+	font-family: 'Carter One', cursive; 
+		padding: 3px;
+		background: rgba(204, 16, 16,0.7) ;
+		width: 20%; font-size: 15px }
+
+.social {display: flex; margin-left: 1% ;
+		margin-top:0vh;}
+
+.social a{ color: black; text-decoration: none;
+		font-size: 25px; padding:1vh 0.5vh;}
+
+
+.container {  margin: 0 auto;
+align-items: center; justify-content: center;
+width: 100vw;
+margin: auto;
+height: 350px}
+
+.container ul {padding: 0;
+	display: flex;
+	 overflow: hidden;
+animation: slider 20s infinite;
+height: 350px}
+
+.ul-slider li {width: 100vw;
+list-style: none; 
+height: 350px}
+
+
+.ul-slider li img{ width: 100vw;
+	height: 350px;
+position:center}
+
+.banner-news li { display: inline-block;
+padding: 10px}
+
+.banner-news li a{  
+font-size: 16px;
+font-family: 'Stick No Bills', sans-serif;
+; color:  white}
+
+.primeras{display: grid;
+grid-template-columns: repeat(1,1fr);
+grid-gap:0vh;
+width: 100%;}
+
+.not{width: 98%; 
+height:200px;
+margin-top:}
+
+.not  a img{width: 98vw;
+height:200px;position:absolute;
+padding: 0px;
+margin:0;}
+
+.not .capa{position: relative;
+margin-left: 2%}
+
+.not .capa h6{font-family: 'Stick No Bills  ', sans-serif;
+font-size: 15px;
+background: rgba(64,97,117,1);
+width: 60%;
+margin-top: 20px;   
+  color: white;
+  padding: 10px;}
+
+.not .capa a{text-decoration:none;
+  color: white;}
+
+.not .capa a h6{font-family: Verdana;
+font-size: 15px;
+background: none;
+margin-top: 10px ;
+width:90%;
+padding: 0;}
+
+.not .capa p{font-family: Verdana;
+font-size: 14px;
+  margin-top:1vh ;
+  color: white;}
+
+.not:hover {transition: transform .2s;  
+transform: scale(1.02); }
+
+.seg{display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-gap: 1vh;
+margin: 0 auto;
+width: 98vw;}
+
+.notd1{
+margin: 0;
+position: relative;
+  height: 150px}
+
+.notd1 a img{width: 100%;
+position: absolute;
+;height: 150px}
+
+.capa2{position: relative;
+}
+
+.capa2  a h6{font-family: 'Stick No Bills  ', sans-serif;
+font-size: 15px;
+background: rgba(64,97,117,1);
+width: 100%;
+  color: white;
+  padding: 10px;}
+
+.notd1:hover {transition: transform .2s; transform: scale(1.02); }
+
+.notd2{
+margin: 0px;
+position: relative; 
+height: 150px;}
+
+.notd2 a img{width: 100%;
+position: absolute;
+;height: 150px}
+
+
+	.ne h5 {color:rgb(15, 198, 103);
+	 background: rgba(8, 29, 18,0.7);
+	 text-align: center;
+	 padding:10px ;
+	 border-radius: 10px;
+	margin: 20px;
+width:200px;
+font-size: 15px;
+font-family: 'Stick No Bills  ', sans-serif;
+margin-left: 5%}
+
+
+.all{ display: block; 
+width: 95%}
+
+.artic {display: block; 
+		width:100vw ; margin-bottom: 3vh;
+		margin-left: 2% }
+	
+.artic .img a h6{font-family: 'Stick No Bills  ', sans-serif;
+font-size: 18px;
+background: rgba(64,97,117,1);
+width:90vw;
+  color: white;
+  padding: 10px;} 
+  
+  
+.artic a img {display: block; 
+		width:90vw; margin-bottom: 10px;
+		height: 150px;}
+				
+.informacion {margin-left: 0VH;
+color: black;margin-top:0p;
+  text-decoration-line: none;
+  text-decoration: none;
+  text-decoration-color: none;}
+
+.informacion a {
+  color: black;
+  padding: 10px 0vh;  
+  text-decoration: none  }
+  
+  .informacion a h3 {
+  font-family: 'Stick No Bills  ', sans-serif;
+  color: black;
+    font-size: 18px;
+    text-decoration:none ;
+    width: 80%;  }
+  
+  .informacion p{font-size:15px;
+    color: black;
+    padding: 15px 0vh;
+    width: 90%; }
+
+  .informacion h6{font-size:13px;
+    color: gray;
+    padding: 0vh;
+    font-family: Monospace;}
+
+  .late{ margin: 20px auto; width: 80% ;
+margin-left: 0%
+;margin: 0 auto}
+
+
+.late a img {width: 100%; padding: 2vh 0px; 
+	height:150px;
+margin: 0 auto;display: flex;
+justify-content: center;
+align-items: center;}
+
+
+
+
+.late a .img1 {width: 100%; padding: 2vh 0px; height:35vh;
+margin: 0 auto;display: flex;
+justify-content: center;
+align-items: center;}
+
+
+
+.lado  {width: 100% ; margin: 1vh auto;}
+
+.lado span h6{ font-size: 20px;
+	color: rgb(96, 151, 140) ; width: 90%;
+margin: 0 auto; justify-content: center;
+align-items: center;}
+
+.lado span li{ font-size: 16px;
+	color: rgb(128, 194, 127) ; 
+	padding: 5px }
+
+
+.cisco{width: 100%; margin: 10px auto;}
+
+.cisco  a img{width: 100%; height: 200px}
+
+
+.cisco h5{ font-size:20px;
+	font-family:TypoQuik_Light_Italic_Demo;
+	color: rgb(96, 51, 40) ; width: 100%;
+margin: 0 auto; justify-content: center;
+align-items: center;
+margin: 0 2%;
+	color: rgb(96, 151, 140)}
+
+.cisco p{ text-decoration: none; 
+	color: black; 
+	font-size:16px;
+	font-family:TypoQuik_Light_Italic_Demo;
+	margin: 1vh 2%;
+width: 100%}
+
+
+.recome{margin-top: 5vh; 
+	border: 0.3vh solid rgb(52, 196, 174);
+border-radius: 10px ; width: 100%;
+padding: 1vh}
+
+.recome h6{ 
+	font-family:TypoQuik_Light_Italic_Demo;
+font-size:20px;
+	color: rgb(96, 151, 140) ; 
+	width: 100%; ; justify-content: center;
+align-items: center;
+margin-bottom: 2vh}
+
+.recome li{ font-size: 16px; line-height: 1.2;
+		font-family:TypoQuik_Light_Italic_Demo;list-style: none; padding: 0;
+		margin: 0}
+
+
+.recome li::before {
+  content: "+ ";
+  color: rgb(96, 151, 140) ; 
+	;
+  font-size:4vh}
+
+
+
+.grupo11{display: grid; 
+		grid-template-columns: repeat(1,1fr);}
+
+
+
+.sobre{ padding: 10px 0px;	
+		width: 100%;
+		 justify-content: center;
+		 margin: 00px 0px}
+
+.sobre img{width: 80% ;
+		 display: flex;
+		 padding: 0px  2px;
+		 margin: 10 auto	}
+
+.sobre h6{ display: flex; 
+justify-content: center;
+	align-items: center; margin:0 auto;  
+font-size: 21px;
+margin-top: 1vh}
+
+.sobre p{ color: #ffff ;
+		font-size: 15px; line-height: 1; 
+     	text-align: center;
+     	padding: 0px;
+     	width: 80%;
+     	margin: 1vh auto}
+
+.sobre .red-social{ display: flex; justify-content: center;
+align-items: center; margin: 0 auto;
+  border: none}
+
+.sobre .red-social a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	 margin: 0 auto;
+	  padding: 10px;
+	  font-size: 35px;
+  border: none;
+}
+
+.top .social {  right: 1vw;
+	display: flex;
+	position: absolute;}
+
+
+
+.menu li{ display: inline-block;
+	text-align: center; 
+	padding: 0px 1vh }
+
+.menu li a	{display: inline-block;;
+			color:white;  
+			background: #006A4E;
+			text-decoration: none; 
+ 			font-family:monospace;
+ 			font-size: 15px	;
+ 			border-radius: 50%;
+ 			padding:10px}
+
+  .grupo2{background-color: #0a1a2a;}
+
+ .grupo2 h6{
+ 	font-size: 15px;
+ 	color: white;
+ 	margin: 0px auto;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+	width: 80%;
+	text-align: center; 
+	font-family:TypoQuik_Light_Italic_Demo;}
+	
+ .grupo2 p{
+ 	font-size: 15px;
+ 	color: white;
+ 	margin: 0px auto;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+	width: 100%;
+	text-align: center; 
+	font-family:TypoQuik_Light_Italic_Demo;
+	padding: 0px}
+}
+
+
