@@ -1276,15 +1276,16 @@ justify-content: center;
 align-items: center;}
 
 
-.late a .img1 {width: 100%; padding: 20px 0px; height:200px;
+.late a .img1 {width: 100%; padding: 20px 0px;
+ height:250px;
 margin: 0 auto;display: flex;
 justify-content: center;
 align-items: center;}
 
 
 
-.lado  {width: 100% ; margin: 10px auto;
-padding: 10px 5px;}
+.lado  {width: 95% ; margin: 10px auto;
+padding: 20px 10px;}
 
 .lado span h6{ font-size: 20px;
 	color: rgb(96, 151, 140) ; width: %;
@@ -1341,6 +1342,11 @@ margin-bottom: 2vh}
 	;
   font-size:20px}
 
+#mrrobot img{font-family: 'Stick No Bills  ', sans-serif;
+  color: black;
+width: 90%;
+height: 250px}
+
 
 
 .grupo11{display: grid; 
@@ -1353,10 +1359,11 @@ margin-bottom: 2vh}
 		 justify-content: center;
 		 margin: 00px 0px}
 
-.sobre img{width: 80% ;
+.sobre img{width: 70% ;
 		 display: flex;
 		 padding: 0px  2px;
-		 margin: 10 auto	}
+		 margin: 10 auto;
+		 height: 50px;	}
 
 .sobre h6{ display: flex; 
 justify-content: center;
