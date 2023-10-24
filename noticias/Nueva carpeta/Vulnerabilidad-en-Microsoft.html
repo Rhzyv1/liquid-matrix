@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+		<title>Vulnerabilidad en Microsoft</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<!---logo---->
+	<link rel="icon"  href="../img/nun.png">
+	<!---Iconos---->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!---animations---->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap" rel="stylesheet">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Poor+Story&display=swap" rel="stylesheet">	
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap" rel="stylesheet">
+
+
+
+
+	
+	</head>
+<body>
+
+
+<header class="haeder3">	
+
+<div class="top">
+	<h4><i class="fa fa-"></i>@ Last News</h4>
+	<div class="social">
+		<a href="https://www.facebook.com/liquidmatrixdigest/"><i class="fa fa-facebook"></i></a>
+		
+		<a href="https://twitter.com/liquidmatrix"><i class="fa fa-twitter"></i></a>
+
+		<a href="https://www.youtube.com/channel/UCFfZEfQF0T4O_6t6YoHGW4w"> <i class="fa fa-youtube"></i> </a>
+
+	</div>
+	
+</div>
+
+			<div class="cabezera">
+				<img src="../img/bannerlogo-6.png">
+				
+
+			</div>	
+
+
+				
+
+<section class="noticia">
+	
+
+<h4> Vulnerabilidad en Microsoft Teams permite robar credenciales</h4>
+<p>
+Descubren una vulnerabilidad que permitiría a un atacante acceder a una archivo que contiene tokens de acceso en texto sin formato.</p>
+<p>andré Lameiras  <time datetime="14-06-2023"> </time>14-06-2023</p>
+</section>
+
+
+
+</header>
+
+<nav class="bon-fl">
+<a href="https://www.facebook.com/liquidmatrixdigest/"><i class="fa fa-facebook"></i></a>
+		
+		<a href="https://twitter.com/liquidmatrix"><i class="fa fa-twitter"></i></a>
+
+		<a href="https://www.youtube.com/channel/UCFfZEfQF0T4O_6t6YoHGW4w"> <i class="fa fa-youtube"></i> </a></nav>
+
+
+<article class="nota">
+
+	<section>
+	
+
+<p>Compartieron detalles del descubrimiento de una vulnerabilidad en la app de escritorio de Microsoft Teams para Windows, Mac y Linux. El fallo permitiría que un actor malicioso con acceso a los archivos de un sistema que utilice Microsoft Teams pueda robar tokens de autenticación de un usuario o usuaria que haya iniciado sesión.
+</p> 
+<p>
+Esta vulnerabilidad está relacionada con el hecho de que la app de Microsoft Teams almacena, sin la debida protección, tokens de autenticación en texto sin formato. En este sentido, un atacante podría hacer uso de estos tokens de autenticación para iniciar sesión en la cuenta de la víctima, incluso si tienen habilitada la autenticación multifactor (MFA, por sus siglas en inglés). Además, como el atacante no necesita permisos elevados para leer estos archivos, puede ser aprovechada en cualquier ataque en el que hayan logrado acceso físico o remoto al sistema.
+</p>
+<h3>“Dos vulnerabilidades adicionales descubiertas en Microsoft Teams, la falta de aplicación de permisos y la falsificación de archivos adjuntos, permiten que el generador de GIFShell se descarte y ejecute de manera convincente en la máquina de la víctima, completando la cadena de ataque desde el compromiso de la víctima hasta las comunicaciones encubiertas”, explicó Raunch.</h3>
+
+
+ 		<img src="../img/teams.png">
+<p>
+Microsoft Teams es una potente plataforma de comunicación y colaboración utilizada por empresas, instituciones educativas y usuarios que ofrece chat, videoconferencias y una gran cantidad de aplicaciones vinculadas a la organización de tareas y proyectos y gestión de información
+</p>
+<img src="../img/f768x1-38623_38750_0.jpg">
+
+<p>
+El equipo de investigación de Vectra fue el que descubrió esta vulnerabilidad en agosto de 2022 y aseguraron que la reportaron a Microsoft. Sin embargo, el gigante tecnológico dijo que el fallo reportado no cumplía con los requisitos suficientes para el lanzamiento de un parche inmediato. Según manifestó un vocero de Microsoft al Bleeping Computer, la técnica que describe Vectra no cumple con sus parámetros para una respuesta inmediata, ya que requiere que primero el atacante obtenga acceso a la red de una víctima.
+</p>
+
+<img src="../img/f768x1-38624_38751_15.jpg">
+<p>
+Los investigadores publicaron detalles del hallazgo y manifestaron que mientras trabajaban en una forma de remover cuentas antiguas de Teams se toparon con un archivo ldb que contenía tokens de acceso en texto sin formato, los cuales le permitieron acceder durante las pruebas que realizaron a las API de Outlook y Skype; con todo lo que eso implica.
+</p>
+
+
+<p>
+Según explicaron, un aspecto clave para explicar este fallo tiene que ver con que Microsoft Teams es un desarrollo que se basa en el framework app Electron, utilizado para crear aplicaciones de escritorio capaces de ser ejecutadas en un navegador. Y si bien esto hace más sencillo el desarrollo, el uso de un navegador web en el contexto de una app presenta ciertos riesgos para la seguridad. Esto en parte se debe a que los desarrolladores de apps no comprenden completamente cómo funciona Electron, ya que, por ejemplo, este framework no soporta por defecto el cifrado o la protección de ubicación de archivos.
+</p>
+<p>
+Para los especialistas preocupa el alcance que podría tener este hallazgo en un escenario en el cual atacantes logren comprometer varios equipos y puedan tomar el control de cuentas importantes.
+</p>
+<h3>
+Las 7 fallas y vulnerabilidades en Microsoft Teams
+</h3>
+<ol>
+<li>Omite controles de seguridad de Microsoft Teams y permite a los usuarios externos enviar archivos adjuntos a los usuarios de Microsoft Teams.
+</li>
+<li>Modificar los archivos adjuntos enviados para que los usuarios descarguen archivos desde una URL externa en lugar del enlace de SharePoint generado.
+</li>
+<li>
+Falsificar los archivos adjuntos de los equipos de Microsoft para que aparezcan como archivos inofensivos, pero descargue un ejecutable o documento malicioso.</li>
+<li>
+Esquemas de URI inseguros que permite el robo de hash NTLM de SMB o ataques de retransmisión NTLM.</li>
+<li>
+Microsoft admite el envío de GIF codificados en HTML base64, pero no analiza el contenido de bytes de esos. Esto permite enviar comandos maliciosos dentro de un GIF de aspecto normal.
+</li>
+<li>Microsoft almacena los mensajes de Teams en un archivo de registro analizable, ubicado localmente en la máquina de la víctima y al que puede acceder un usuario con pocos privilegios.
+</li>
+<li>
+Los servidores de Microsoft recuperan GIF de servidores remotos, lo que permite la filtración de datos a través de nombres de archivos GIF</li>
+</ol>
+
+
+<h3>
+GifShell: una técnica que utiliza archivos GIF maliciosos en Microsoft Teams
+</h3>
+<p>
+Además de esta vulnerabilidad, hace unas semanas se relevaron detalles de una nueva técnica que aprovecha una serie de vulnerabilidades y fallos en Microsoft Teams para utilizar la plataforma para ataques de phishing, el envío de archivos maliciosos, exfiltrar datos o incluso enviar comandos. Todo a través de un archivo GIF. La técnica fue apodada GIFShell y fue descubierta por el investigador Bobby Raunch.
+</p>
+
+
+
+</section>
+	
+<hr>
+<h3>Fuente:</h3>
+<a href="https://www.welivesecurity.com/la-es/2022/09/15/vulnerabilidad-microsoft-teams-permite-robar-credenciales/">https://www.welivesecurity.com/la-es/2022/09/15/vulnerabilidad-microsoft-teams-permite-robar-credenciales/</a>
+</article>
+<!----comentario esperar fase 2
+<h6>
+Tu opinión nos importa, ¡déjanos un comentario! </h6>
+<textarea name="mesaje" placeholder="Si te fue útil esta información dejanos tu opinión.">
+</textarea>
+<div class="button">
+	
+<input type="button" value="Enviar">
+<i class="fa fa-arrow-right">
+</i>
+</div>
+---->
+</article>
+<h4 class="otro">Otros articulos</h4>
+
+<div class="arts-i">
+	
+	<div class="not-1">
+		
+		<h5>Vulnerabilidades</h5>
+		<a href="Proxynoshell.html"><h3>ProxyNotShell: nuevas vulnerabilidades zero‑day en Microsoft Exchange</h3></a>
+		<h6>
+		Juan Manuel Harán <time datetime="08-06-2023"> </time>08-06-2023</h6>
+
+
+	</div>
+	<div class="not1-1">
+		
+		<h5>Vulnerabilidades</h5>
+		<a href="Ataquedelransomware.html"><h3>
+			Ataque del ransomware LockBit afectó al Poder Judicial de Chile
+		</h3></a>
+		<h6>
+		Juan Manuel Harán <time datetime="18-06-2023"> </time>18-06-2023</p></h6>
+
+
+	</div>
+	<div class="not2-1">
+		
+		<h5>Vulnerabilidades</h5>
+		<a href="Vulnerabilidad-en-Microsoft.html"><h3>
+			Vulnerabilidad en Microsoft Teams permite robar credenciales
+		</h3></a>
+		<h6>
+		andré Lameiras  <time datetime="14-06-2023"> </time>14-06-2023</h6>
+	</div>
+	</div>
+
+<footer>
+	<div class="grupo1">	
+<div class="box">
+	 	 		<img src="../img/bannerlogo-6.png">
+
+	<h2>Contactanos</h2>
+	<h3>Liquidmatrix@gmail.com </h3>	
+	 		 
+</div> 
+<div class="sobre">
+	<h2>Sobre nosotros</h2>
+	<p>Somos un portal de informacion y  seguirad informatica , con el fin de dar conciencia a los usuarios , capazitar  y actualizarlos sobre nuevas tegnologias y sucesos relevantes sobre este ambito.</p> 
+</div>
+
+	 	<div class="sobre">
+	 		<h2> Contactanos</h2>
+	 	<div class="red-social">
+	 		<a href="https://www.facebook.com/liquidmatrixdigest/"><i class="fa fa-facebook"></i></a>
+		
+		<a href="https://twitter.com/liquidmatrix"><i class="fa fa-twitter"></i></a>
+
+		<a href="https://www.youtube.com/channel/UCFfZEfQF0T4O_6t6YoHGW4w"> <i class="fa fa-youtube"></i> </a>
+	
+	 	</div>
+ </div>
+ </div>
+
+	 <div class="grupo2">
+	 	<h6>&copy; 2023 Suburbio de ideas </h6>
+	 	
+	 	<p>Disclaimer: </p>
+	 	
+	 	<p>La propiedad intelectual de los sitos usados para el portafolio solo es para inspiración, los derechos de imagen pertenecen a las entidades </p>
+	 </div>
+</footer>
+
+
+
+</body>
+</html>
