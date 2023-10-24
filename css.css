@@ -153,7 +153,6 @@ grid-template-columns: repeat(2,1fr);
 grid-gap: 2vh;
   width: 99%;
   margin: 0 auto;
-height: 370px;
 max-width: 1500px}
 
 .not{	width: 130%;
@@ -685,7 +684,7 @@ grid-template-columns: repeat(2,1fr);
 grid-gap: 2vh;
   width: 99%;
   margin: 0 auto;
-height: 250px;
+
 max-width: 1800px}
 
 .not{	width: 130%;
@@ -1067,57 +1066,58 @@ line-height: 1}
 .head{margin: 0px;display: grid;
 ;grid-template-columns: repeat(1,1fr); }
 
-.top p{
-	 display: none;
-		}
+.top p{display: none;}
 
 
 .top img{width: 150px;
 height: 6vh}
 
-.top h4{  
-	font-family: 'Carter One', cursive; 
+.top h4{ font-family: 'Carter One', cursive; 
 		padding: 3px;
 	width:100px; 
-font-size: 15px }
+font-size: 15px ;
+border-radius:0px 20px 20px 0px 	;
+	 }
 
 .social {display: flex; margin-left: 1% ;
 		margin-top:0vh;}
 
-.social a{ color: black; text-decoration: none;
-		font-size: 25px; padding:1vh 0.5vh;}
+.social a{ color: white;
+ text-decoration: none;
+font-size: 25px; 
+padding:1vh 0.5vh;}
 
 
 .container {  margin: 0 auto;
 align-items: center; justify-content: center;
 width: 100vw;
 margin: auto;
-height: 300px}
+height: 250px}
 
 .container ul {padding: 0;
 	display: flex;
 	 overflow: hidden;
 animation: slider 20s infinite;
-height: 300px}
+height: 250px}
 
 .ul-slider li {width: 100vw;
 list-style: none; 
-height: 350px}
+height: 250px}
 
 
 
 
 .ul-slider li img{ width: 100vw;
-	height: 300px;
+	height: 250px;
 position:center}
 
 .banner-news ul{padding-left: 0%;}
 
 .banner-news li { display: inline-block;
-padding: 10px 0px}
+padding: 15px 0px}
 
 .banner-news li a{  
-font-size: 13px;
+font-size: 15px;
 font-family: 'Stick No Bills', sans-serif;
 ; color:  white;
 padding: 0px 3px}
@@ -1125,24 +1125,25 @@ padding: 0px 3px}
 .primeras{display: grid;
 grid-template-columns: repeat(1,1fr);
 grid-gap:0vh;
-width: 100%;}
+width: 100%;	
+}
 
 .not{width: 98%; 
-height:200px;
+height:170px;
 margin-top:}
 
 .not  a img{width: 98vw;
-height:200px;position:absolute;
+height:170px;position:absolute;
 padding: 0px;
 margin:0;}
 
 .not .capa{position: relative;
-margin-left: 2%}
+margin-left: 5%}
 
 .not .capa h6{font-family: 'Stick No Bills  ', sans-serif;
 font-size: 15px;
-background: rgba(64,97,117,1);
-width: 60%;
+background: rgba(64,97,117,0.5);
+width: 140px;
 margin-top: 20px;   
   color: white;
   padding: 10px;}
@@ -1167,26 +1168,27 @@ transform: scale(1.02); }
 
 .seg{display: grid;
 grid-template-columns: repeat(2,1fr);
-grid-gap: 1vh;
+grid-gap: 10px;
 margin: 0 auto;
-width: 98vw;}
+width: 98vw;
+ height: 130px}
 
 .notd1{
 margin: 0;
 position: relative;
-  height: 150px}
+  height: 130px}
 
 .notd1 a img{width: 100%;
 position: absolute;
-;height: 150px}
+;height: 130px}
 
 .capa2{position: relative;
 }
 
 .capa2  a h6{font-family: 'Stick No Bills  ', sans-serif;
 font-size: 15px;
-background: rgba(64,97,117,1);
-width: 100%;
+background: rgba(64,97,117,0.5);
+;width: 100%;
   color: white;
   padding: 10px;}
 
@@ -1195,11 +1197,11 @@ width: 100%;
 .notd2{
 margin: 0px;
 position: relative; 
-height: 150px;}
+height: 130px;}
 
 .notd2 a img{width: 100%;
 position: absolute;
-;height: 150px}
+;height: 130px}
 
 
 	.ne h5 {color:rgb(15, 198, 103);
@@ -1208,10 +1210,10 @@ position: absolute;
 	 padding:10px ;
 	 border-radius: 10px;
 	margin: 20px;
-width:200px;
+width:150px;
 font-size: 15px;
 font-family: 'Stick No Bills  ', sans-serif;
-margin-left: 5%}
+margin: 10px auto}
 
 
 .all{ display: block; 
@@ -1231,7 +1233,7 @@ width:90vw;
   
 .artic a img {display: block; 
 		width:90vw; margin-bottom: 10px;
-		height: 150px;}
+		height: 140px;}
 				
 .informacion {margin-left: 0VH;
 color: black;margin-top:0p;
@@ -1249,15 +1251,16 @@ color: black;margin-top:0p;
   color: black;
     font-size: 20px;
     text-decoration:none ;
-    width: 80%;  }
+    width: 90%;
+    text-align:   }
   
   .informacion p{font-size:15px;
     color: black;
-    padding: 18px 0vh;
+    padding: 12px 0vh;
     width: 90%; }
 
   .informacion h6{font-size:15px;
-    color: gray;
+
     padding: 0vh;
     font-family: Monospace;}
 
@@ -1273,17 +1276,18 @@ justify-content: center;
 align-items: center;}
 
 
-.late a .img1 {width: 100%; padding: 20px 0px; height:35vh;
+.late a .img1 {width: 100%; padding: 20px 0px; height:200px;
 margin: 0 auto;display: flex;
 justify-content: center;
 align-items: center;}
 
 
 
-.lado  {width: 100% ; margin: 1vh auto;}
+.lado  {width: 100% ; margin: 10px auto;
+padding: 10px 5px;}
 
 .lado span h6{ font-size: 20px;
-	color: rgb(96, 151, 140) ; width: 90%;
+	color: rgb(96, 151, 140) ; width: %;
 margin: 0 auto; justify-content: center;
 align-items: center;}
 
@@ -1313,10 +1317,10 @@ margin: 0 2%;
 width: 100%}
 
 
-.recome{margin-top: 5vh; 
+.recome{margin-top: 20px; 
 	border: 0.3vh solid rgb(52, 196, 174);
 border-radius: 10px ; width: 100%;
-padding: 1vh}
+padding: 10px 5px}
 
 .recome h6{ 
 	font-family:TypoQuik_Light_Italic_Demo;
@@ -1335,7 +1339,7 @@ margin-bottom: 2vh}
   content: "+ ";
   color: rgb(96, 151, 140) ; 
 	;
-  font-size:4vh}
+  font-size:20px}
 
 
 
@@ -1409,7 +1413,7 @@ align-items: center; margin: 0 auto;
  	display: flex;
  	align-items: center;
  	justify-content: center;
-	width: 80%;
+	width: 90%;
 	text-align: center; 
 	font-family:TypoQuik_Light_Italic_Demo;}
 	
