@@ -81,7 +81,7 @@ align-items: center;
 justify-content: center;
 width: 100%;
 margin: auto;
-height: 425px;
+height: 400px;
 max-width: 1500px;
 overflow: hidden;}
 
@@ -100,7 +100,7 @@ padding: 0px;
 margin: 0px}
 
 .ul-slider li img{
-	height: 425px;
+	height: 400px;
 position:center;
 width:99.9vw;
 max-width: 1500px;
@@ -265,7 +265,7 @@ border-radius: 20px}
 	 margin-top: 3%;
 	width: 98%;
 	margin: 0 auto;
-max-width: 1500px}
+max-width: 1400px}
 
 .ne{max-width: 1500px;
 margin: 0 auto}
@@ -304,7 +304,7 @@ padding: 10px 15px}
 		padding: 0px;
 		margin: 0px;
 		width:250px; 
-		height: 120px;
+		height: 150px;
 		padding-top: 
 		;max-width: 500px}
 
@@ -339,7 +339,7 @@ max-width: 1000px}
     width: 95%; font-family: Verdana;
 	max-width: 1000px}
     
-  .informacion h6{font-size:18px;
+  .informacion h6{font-size:20px;
     color: green;
     padding: 10px 0vh;
     font-family: Monospace;}
@@ -535,7 +535,7 @@ margin: 0 auto}
 
 
  .grupo2 h6 a{
- 	font-size: 18px;
+ 	font-size: 20	px;
  	color: green;
  	text-align: left; 
 	font-family:TypoQuik_Light_Italic_Demo;
