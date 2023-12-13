@@ -27,9 +27,9 @@ src:url(TraditionSansXLight.otf)}
 src:url(didactgothic.ttf)}
 
 
-.top {
-;	 background: url(img/463-verde-degradado.png);
-	 background-size: cover;}
+.top {	 background-size: cover;
+	background: #2C3E50; 
+background: linear-gradient(to right, #00554E, #2C3E50); }
 
 .head{	 max-width: 1500px;
 margin: 0 auto;
@@ -39,7 +39,7 @@ display: grid; }
 .top h4{font-family: 'Carter One', cursive; 
 		padding: 5px;;
 		width:150px;
-	 border-radius: 20px 	;
+	 border-radius:0px 20px 20px 0px 	;
 	 font-size: 18px ;
 	background: rgb(85,145,106);
 background: linear-gradient(0deg, rgba(85,145,106,1) 0%, rgba(65,222,193,1) 100%);}
@@ -127,12 +127,13 @@ margin: 0px}
 	}
 
 
-.banner-news{background: url(img/463-verde-degradado.png)   
+.banner-news{
 		; background-size: cover;
 		padding: 0px 20px;
 
 max-width: 1500px;
-margin: 0 auto}
+margin: 0 auto;
+	 background-size: cover;background: linear-gradient(to right, #00554E, #2C3E50); }
 
 .banner-news ul{padding-left: 2%;}
 
@@ -161,7 +162,7 @@ max-width: 1500px}
 
 .not{	width: 130%;
     position: relative;
-    ; height: 370px; 
+    ; height: 370px;
     margin: 2.5% 0.5%; }
 
 .not  a img{width: 100%;
@@ -348,9 +349,10 @@ max-width: 900px}
 	max-width: 900px;
 font-family:didactgothic}
     
-  .informacion h6{font-size:20px;
-    color: green;
-    padding: 10px 0vh;font-family:didactgothic}
+  .informacion h6{font-size:16px;
+    color:rgba(64,97,117,1);
+    padding: 10px 0vh;
+    font-family:didactgothic}
     
 
 .late{ margin: 20px auto; width: 55% ;
@@ -572,10 +574,6 @@ text-decoration: none;}
  @media screen and (min-width: 550px) and (max-width: 1023px) 
 {
 
-.top {
-	 background: url(img/463-verde-degradado.png);
-	 background-size: cover;	}
-
 .head{margin: 0px;display: grid;
 ;grid-template-columns: repeat(3,1fr); }
 
@@ -626,9 +624,7 @@ justify-content: center;
 width: 100%;
 margin: auto;
 height: 300px;
-max-width: 1800px
-}
-
+max-width: 1800px}
 
 .container ul {padding: 0;
 	display: flex;
@@ -665,15 +661,14 @@ margin: 0px}
 	100%{margin-left:-300%} 
 	}
 
-.banner-news{background: url(img/463-verde-degradado.png)   
-		; background-size: cover;
-		padding: 0px 20px}
+.banner-news{	; background-size: cover;
+		padding: 5px 20px}
 
 .banner-news ul{margin-left: 2%}
 
-.banner-news li { display: inline-block;
-padding: 10px
-}
+.banner-news li { 
+display: inline-block;
+padding: 10px}
 
 .banner-news li a{ 
 font-size: 15px;
@@ -766,13 +761,12 @@ box-shadow: 0vh 0vh 5vh black}
 
 
 .notd1{
- margin: 2.5% 0px;
 margin-left: 30% ;
 position: relative;}
 
 
 .notd2{
- margin: 5% 0%; 
+ margin:  0%; 
 margin-left: 30% ;
 position: relative;
   margin-top: 90px ;}
@@ -801,8 +795,8 @@ max-width: 1600px}
 	 text-align: center;
 	 padding:10px ;
 	 border-radius: 10px;
-	margin: 20px;
-width:200px;
+	margin: 10px;
+width:180px;
 font-size: 15px;
 margin-left: 5%}
 
@@ -852,7 +846,7 @@ color: black;
   color: black;
     font-size: 15px;
     text-decoration:none ;
-    width: 100%;  }
+    width: 80%;  }
 
  .informacion a h3:hover{color:rgb(15, 198, 103);}
  
@@ -904,7 +898,7 @@ align-items: center;}
   font-size:15px}
 
 
-.cisco{width: 100%; margin: 10px auto;}
+.cisco{width: 95%; margin: 10px auto;}
 
 .cisco  a img{width: 100%; height: 100px}
 
@@ -924,7 +918,7 @@ width: 100%}
 
 
 .recome{margin: 20px 0px; 
-	border: 2px solid rgb(52, 196, 174);
+	border: 1px solid rgb(52, 196, 174);
 border-radius: 10px ; width: 100%;
 padding: 10px 5px}
 
@@ -933,7 +927,7 @@ font-size:18px;
 	color: rgb(96, 151, 140) ; 
 	width: 100%; ; justify-content: center;
 align-items: center;
-margin-bottom: 2vh}
+margin-bottom: 14px}
 
 .recome li{ font-size: 15px
 	; line-height: 1.2;
@@ -1059,7 +1053,7 @@ text-decoration: none;}
 
 
 .top img{width: 150px;
-height: 70px}
+height: 55px}
 
 .top h4{  
 		padding: 3px;
@@ -1074,7 +1068,7 @@ border-radius:0px 20px 20px 0px 	;
 .social a{ color: white;
  text-decoration: none;
 font-size: 25px; 
-padding:1vh 0.5vh;}
+padding:10px 5px;}
 
 
 .container {  margin: 0 auto;
@@ -1114,13 +1108,14 @@ padding: 0px 3px}
 .primeras{display: grid;
 grid-template-columns: repeat(1,1fr);
 grid-gap:0vh;
-width: 100%;	
+width: 100%;;
+margin: 0 auto	
 }
 
 .not{width: 98%; 
 height:170px;
 margin-top:}
-
+	
 .not  a img{width: 100%;
 height:170px;position:absolute;
 padding: 0px;
@@ -1206,7 +1201,7 @@ margin: 10px auto}
 
 .all{ display: block; 
 width: 90%;
-max-width: 450px;
+max-width: 400px;
 margin: 0 auto}
 
 .artic {display: block; 
@@ -1217,7 +1212,7 @@ margin: 0 auto}
 background: rgba(64,97,117,1);
 width:100%;
   color: white;
-  padding: 20px 10px;} 
+  padding: 10px 10px;} 
   
   
 .artic a img {display: block; 
@@ -1225,14 +1220,14 @@ width:100%;
 		height: 140px;}
 				
 .informacion {margin-left: 0VH;
-color: black;margin-top:0p;
+color: black;margin-top:0px;
   text-decoration-line: none;
   text-decoration: none;
   text-decoration-color: none;}
 
 .informacion a {
   color: black;
-  padding: 20px 0vh;  
+  padding: 10px 0vh;  
   text-decoration: none  }
   
   .informacion a h3 {
@@ -1247,8 +1242,7 @@ color: black;margin-top:0p;
     padding: 15px 0vh;
     width:100%; }
 
-  .informacion h6{font-size:20px;
-
+  .informacion h6{font-size:17px;
     padding: 0vh;
     font-family: Monospace;
 width: 80%}
@@ -1290,7 +1284,7 @@ align-items: center;}
 .cisco{width: 100%; margin: 10px auto;}
 
 .cisco  a img{width: 100%; height: 200px}
-
+ 
 
 .cisco h5{ font-size:20px;
 	color: rgb(96, 51, 40) ; width: 100%;
@@ -1406,9 +1400,18 @@ align-items: center; margin: 0 auto;
  	display: flex;
  	align-items: center;
  	justify-content: center;
-	width: 90%;
+	width: 95%;
 	text-align: center; }
+
+ .grupo2 h6 a{
+ 	font-size: 20px;
+ 	color: green;
+	font-family:TypoQuik_Light_Italic_Demo;
+text-decoration: none;
+padding: 0px 2px}
 	
+
+
  .grupo2 p{
  	font-size: 15px;
  	color: white;
@@ -1421,12 +1424,6 @@ align-items: center; margin: 0 auto;
 	padding: 0px}
 
 
- .grupo2 h6 a{
- 	font-size: 20px;
- 	color: green;
-	font-family:TypoQuik_Light_Italic_Demo;
-text-decoration: none;
-padding: 0px 5px}
 
 
 
