@@ -85,8 +85,7 @@ align-items: center;
 justify-content: center;
 width: 100%;
 margin: auto;
-height: 400px;
-max-width: 1500px;
+height: 450px;
 overflow: hidden;}
 
 
@@ -99,15 +98,13 @@ animation: slider 20s infinite;
 .ul-slider li {
 list-style: none;
 width:99.9vw;
-max-width: 1800px;
 padding: 0px;
 margin: 0px}
 
 .ul-slider li img{
-	height: 400px;
+	height: 450px;
 position:center;
 width:99.9vw;
-max-width: 1500px;
 padding: 0px;
 margin: 0px}
 
@@ -130,12 +127,13 @@ margin: 0px}
 .banner-news{
 		; background-size: cover;
 		padding: 0px 20px;
+	 background-size: cover;background: linear-gradient(to right, #00554E, #2C3E50); }
+
+.banner-news ul{padding-left: 2%;;
 
 max-width: 1500px;
 margin: 0 auto;
-	 background-size: cover;background: linear-gradient(to right, #00554E, #2C3E50); }
-
-.banner-news ul{padding-left: 2%;}
+}
 
 .banner-news li { display: inline-block;
 padding: 20px 10px
@@ -155,7 +153,7 @@ background: rgb(17, 132, 110) ;
 
 .primeras{display: grid;
 grid-template-columns: repeat(2,1fr);
-grid-gap: 2vh;
+grid-gap: 20px;
   width: 99%;
   margin: 0 auto;
 max-width: 1500px}
@@ -276,13 +274,13 @@ max-width: 1400px}
 margin: 0 auto}
 
 	.ne h5 {color:rgb(15, 198, 103);
-	 background: rgba(8, 29, 18,0.7);
+	 background: rgba(108, 89, 88,1);
 	 text-align: center;
 	 padding:10px ;
-	 border-radius: 10px;
+	 border-radius: 5px;
 	margin: 20px;
 width:200px;
-font-size: 15px;
+font-size: 20px;
 font-family: 'Stick No Bills  ', sans-serif;
 margin-left: 5%;
 margin-top: 1%}
@@ -338,15 +336,17 @@ max-width: 900px}
   color: black;
     font-size: 23px;
     text-decoration:none ;
-    width: 96%;  }
+    width: 93%; 
+    	max-width: 700px;
+    	margin-top: 15px }
 
  .informacion a h3:hover{color:rgb(15, 198, 103);}
  
   .informacion p{font-size:20px;
     color: black;
     padding-top: 10px;
-    width: 95%; 
-	max-width: 900px;
+    width: 90%; 
+	max-width: 800px;
 font-family:didactgothic}
     
   .informacion h6{font-size:16px;
@@ -623,7 +623,7 @@ align-items: center;
 justify-content: center;
 width: 100%;
 margin: auto;
-height: 300px;
+height: 280px;
 max-width: 1800px}
 
 .container ul {padding: 0;
@@ -639,7 +639,7 @@ padding: 0px;
 margin: 0px}
 
 .ul-slider li img{
-	height: 300px;
+	height: 280px;
 position:center;
 width:99.9vw;
 max-width: 1800px;
@@ -686,8 +686,7 @@ grid-template-columns: repeat(2,1fr);
 grid-gap: 2vh;
   width: 99%;
   margin: 0 auto;
-
-max-width: 1800px}
+max-width: 900px}
 
 .not{	width: 130%;
     position: relative;
@@ -787,14 +786,12 @@ box-shadow: 0vh 0vh 5vh black}
 	 margin-top: 3%;
 	width: 98%;
 	margin: 0 auto;
-max-width: 1600px}
+max-width: 900px}
 
 
 	.ne h5 {color:rgb(15, 198, 103);
-	 background: rgba(8, 29, 18,0.7);
 	 text-align: center;
 	 padding:10px ;
-	 border-radius: 10px;
 	margin: 10px;
 width:180px;
 font-size: 15px;
@@ -831,7 +828,7 @@ margin-top: 15px}
 
 
 		
-.informacion {margin-left: 20px;
+.informacion {margin-left: 10px;
 color: black;
   text-decoration-line: none;
   text-decoration: none;
@@ -853,7 +850,7 @@ color: black;
   .informacion p{font-size:15px;
     color: black;
     padding-top: 10px;
-    width: 90%; }
+    width: 95%; }
     
   .informacion h6{font-size:15px;
     padding: 10px 0vh;}
@@ -1053,7 +1050,7 @@ text-decoration: none;}
 
 
 .top img{width: 150px;
-height: 55px}
+height: 50px}
 
 .top h4{  
 		padding: 3px;
@@ -1068,7 +1065,7 @@ border-radius:0px 20px 20px 0px 	;
 .social a{ color: white;
  text-decoration: none;
 font-size: 25px; 
-padding:10px 5px;}
+padding: 5px;}
 
 
 .container {  margin: 0 auto;
@@ -1188,11 +1185,8 @@ position: absolute;
 ;height: 130px}
 
 
-	.ne h5 {color:rgb(15, 198, 103);
-	 background: rgba(8, 29, 18,0.7);
-	 text-align: center;
+	.ne h5 {text-align: center;
 	 padding:10px ;
-	 border-radius: 10px;
 	margin: 20px;
 width:150px;
 font-size: 15px;
@@ -1380,7 +1374,7 @@ align-items: center; margin: 0 auto;
 
 .menu li{ display: inline-block;
 	text-align: center; 
-	padding: 0px 1vh }
+	padding: 0px 10px }
 
 .menu li a	{display: inline-block;;
 			color:white;  
@@ -1404,7 +1398,7 @@ align-items: center; margin: 0 auto;
 	text-align: center; }
 
  .grupo2 h6 a{
- 	font-size: 20px;
+ 	font-size: 18px;
  	color: green;
 	font-family:TypoQuik_Light_Italic_Demo;
 text-decoration: none;
