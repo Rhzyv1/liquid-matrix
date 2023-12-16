@@ -1418,7 +1418,12 @@ padding: 0px 2px}
 	padding: 0px}
 
 
-
+ .grupo2 h6 a:hover{
+ 	font-size: 16px;
+ 	color:red;
+ 	text-align: left; 
+	font-family:TypoQuik_Light_Italic_Demo;
+text-decoration: none;}
 
 
 }
