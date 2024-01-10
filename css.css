@@ -153,7 +153,7 @@ grid-template-columns: repeat(2,1fr);
 grid-gap: 20px;
   width: 95%;
   margin: 0 auto;
-max-width: 1300px}
+max-width: 1400px}
 
 .not{	width: 130%;
     position: relative;
@@ -191,7 +191,8 @@ font-size: 20px;
 background: none;
 margin-top: 10px ;
 width:90%;
-padding: 0vh}
+padding: 10px 0px;
+max-width: 500px}
 
 .not .capa a h6:hover{
 color: rgb(17, 232, 210)}
