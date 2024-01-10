@@ -17,14 +17,14 @@ html::-webkit-scrollbar-thumb{
 html::-webkit-scrollbar-thumb:hover{
 	background:rgb(80, 105, 124);}
 
-body{width:;
+body{
 margin: 0 auto;}
 
-@font-face{font-family:TypoQuik_Light_Italic_Demo;
-src:url(TraditionSansXLight.otf)}
+	@font-face{font-family:TypoQuik_Light_Italic_Demo;
+	src:url(font/TraditionSansXLight.otf)}
 
-@font-face{font-family:didactgothic;
-src:url(didactgothic.ttf)}
+	@font-face{font-family:didactgothic;
+	src:url(font/didactgothic.ttf)}
 
 
 .top {	 background-size: cover;
@@ -50,7 +50,9 @@ background: linear-gradient(0deg, rgba(85,145,106,1) 0%, rgba(65,222,193,1) 100%
 	 font-size: 20px;
 	 padding-top: 20px ;
 	 text-align: center;
-	 color: white}
+	 color: white;
+	 width: 300px;
+	 margin: 0 auto}
 
 
 .top .social { 
@@ -92,8 +94,7 @@ overflow: hidden;}
 .container ul {padding: 0;
 	display: flex;
 	 overflow: hidden;
-animation: slider 20s infinite;
-}
+animation: slider 20s infinite;}
 
 .ul-slider li {
 list-style: none;
@@ -106,7 +107,7 @@ margin: 0px}
 position:center;
 width:99.9vw;
 padding: 0px;
-margin: 0px}
+margin: 0px;}
 
 
 @keyframes slider{ 
@@ -132,16 +133,16 @@ padding: 0px 20px;background-size: cover;background: linear-gradient(to right, #
 max-width: 1500px;
 margin: 0 auto;}
 
-.banner-news li { display: inline-block;
+.banner-news a { display: inline-block;
 padding: 10px}
 
-.banner-news li a{ 
+.banner-news  a{ 
 font-size: 20px;
 font-family: 'Stick No Bills', sans-serif;
   color: white;
   text-decoration: none;}
 
-.banner-news li:hover{ 
+.banner-news a:hover{ 
 background: rgb(17, 132, 110) ;
 	color: rgb(17, 232, 110)}
 
@@ -150,9 +151,9 @@ background: rgb(17, 132, 110) ;
 .primeras{display: grid;
 grid-template-columns: repeat(2,1fr);
 grid-gap: 20px;
-  width: 99%;
+  width: 95%;
   margin: 0 auto;
-max-width: 1500px}
+max-width: 1300px}
 
 .not{	width: 130%;
     position: relative;
@@ -171,11 +172,15 @@ margin-left: 3%}
 .not .capa h6{font-family: 'Stick No Bills  ', sans-serif;
 font-size: 25px;
 background: rgba(64,97,117,1);
-width: 220px;
+width: 170px;
 margin-top: 170px;
   color: white;
 padding: 10px 5px;
-border-radius: 20px}
+border-radius: 20px;}
+
+
+.not .capa h6:hover{color: rgb(17, 232, 210)}
+
 
 .not .capa a{text-decoration:none;
   color: white;}
@@ -264,16 +269,16 @@ border-radius: 20px}
 	 margin-top: 3%;
 	width: 98%;
 	margin: 0 auto;
-max-width: 1400px}
+max-width: 1500px}
 
 .ne{max-width: 1500px;
 margin: 0 auto}
-
+ 
 	.ne h5 {color:rgb(15, 198, 103);
 	 background: rgba(50, 55, 55,1);
 	 text-align: center;
 	 padding:10px ;
-	 border-radius: 5px;
+	 border-radius:20px;
 	margin: 20px;
 width:200px;
 font-size: 20px;
@@ -355,7 +360,7 @@ font-family:didactgothic}
 margin-left: 45%}
 
 
-.late a img {width: 100%; padding: 2vh 0px; height:150px;
+.late a img {width: 100%; padding: 2vh 0px; height:200px;
 margin: 0 auto;display: flex;
 justify-content: center;
 align-items: center;}
@@ -658,20 +663,20 @@ margin: 0px}
 	}
 
 .banner-news{	; background-size: cover;
-		padding: 5px 20px}
+		padding: 5px}
 
 .banner-news ul{margin-left: 2%}
 
-.banner-news li { 
+.banner-news a { 
 display: inline-block;
-padding: 10px}
+padding: 5px}
 
-.banner-news li a{ 
+.banner-news  a{ 
 font-size: 15px;
   color: white;
   text-decoration: none;}
 
-.banner-news li:hover{ 
+.banner-news a:hover{ 
 background: rgb(17, 132, 110) ;
 	color: rgb(17, 232, 110)}
 
@@ -726,7 +731,7 @@ transform: scale(1.02);
 box-shadow: 0vh 0vh 20px black}
 
 .notd1{
- margin: 2.5% 0px;
+ margin: 7px 0px;
 margin-left: 30% ;
 position: relative;}
 
@@ -740,7 +745,7 @@ position: absolute;
 .capa2 a {text-decoration:none}
 
 .capa2 a h6{
-font-size: 15px;
+font-size: 13px;
 background: rgba(64,97,117,1);
 width: 100%;
   color: white;
@@ -753,8 +758,6 @@ width: 100%;
 .notd1:hover {transition: transform .2s;  
 transform: scale(1.02); 
 box-shadow: 0vh 0vh 5vh black}
-
-
 .notd1{
 margin-left: 30% ;
 position: relative;}
@@ -829,7 +832,7 @@ color: black;
   text-decoration-line: none;
   text-decoration: none;
   text-decoration-color: none;
-  margin-top: 20px}
+  margin-top: 10px}
 
 .informacion a {
   color: black;  
@@ -916,16 +919,16 @@ border-radius: 10px ; width: 100%;
 padding: 10px 5px}
 
 .recome h6{ 
-font-size:18px;
+font-size:16px;
 	color: rgb(96, 151, 140) ; 
 	width: 100%; ; justify-content: center;
 align-items: center;
-margin-bottom: 14px}
+margin-bottom: 5px}
 
-.recome li{ font-size: 15px
+.recome li{ font-size: 14px
 	; line-height: 1.2;
 	list-style: none;
-	 padding: 5px 0px;
+	 padding: 2px 0px;
 		margin: 0}
 
 
@@ -998,44 +1001,46 @@ height: 60px}
  	padding: 20px}
 
  .grupo2 h6{
- 	font-size: 15px;
- 	color: white;
- 	margin: 0px auto;
- 	display: flex;
- 	align-items: center;
- 	justify-content: center;
-	width: 70%;
-	text-align: center; 
-}
-
-
-
- .grupo2 h6 a{
- 	font-size: 15px;
- 	color: green;
- 	text-align: left; 
-text-decoration: none;}
-
-
- .grupo2 h6 a:hover{
- 	font-size: 15px;}
-
-
-	
- .grupo2 p{
  	font-size: 13px;
  	color: white;
  	margin: 0px auto;
  	display: flex;
  	align-items: center;
  	justify-content: center;
-	width: 60%;
+	width: 70%;
+	text-align: center;}
+
+
+
+ .grupo2 h6 a{
+ 	font-size: 14px;
+ 	color: green;
+ 	text-align: left; 
+text-decoration: none;
+padding: 0px 3px}
+
+
+ .grupo2 h6 a:hover{
+ 	font-size: 14px;}
+
+
+
+	
+ .grupo2 p{
+ 	font-size: 12px;
+ 	color: white;
+ 	margin: 0px auto;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+	width: 50%;
 	text-align: center; 
-	padding: 0px;line-height: 1}
+	padding: 0px;
+	line-height: 1,2}
 
 }
 
-@media screen and (max-width: 549px)
+@media screen and (max-width: 749px)
 {
 
 
@@ -1148,7 +1153,7 @@ grid-template-columns: repeat(2,1fr);
 grid-gap: 10px;
 margin: 0 auto;
 width: 98vw;
- height: 130px}
+height: 130px}
 
 .notd1{
 margin: 0;
