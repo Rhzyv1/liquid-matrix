@@ -21,10 +21,12 @@ body{
 margin: 0 auto;}
 
 	@font-face{font-family:TypoQuik_Light_Italic_Demo;
-	src:url(font/TraditionSansXLight.otf)}
+	src:url(font/TraditionSansXLight.otf);
+font-display:swap;}
 
 	@font-face{font-family:didactgothic;
-	src:url(font/didactgothic.ttf)}
+	src:url(font/didactgothic.ttf);
+font-display:swap;}
 
 
 .top {	 background-size: cover;
@@ -48,7 +50,7 @@ background: linear-gradient(0deg, rgba(85,145,106,1) 0%, rgba(65,222,193,1) 100%
 .top p{font-family: 'Stick No Bills', sans-serif; 
 		padding: 10px;
 	 font-size: 20px;
-	 padding-top: 20px ;
+	 padding-top: 40px ;
 	 text-align: center;
 	 color: white;
 	 width: 300px;
@@ -69,7 +71,7 @@ text-decoration: none;
 
 .social a:hover{
   cursor: pointer;
-	color: red;
+	color:green;
 transition: all 1s ease;}
 
 .cabezera{; display: flex; 
@@ -78,7 +80,8 @@ margin: 0px auto; padding: 100px 0px;
 background: rgb(17, 19, 17);border-bottom: 5px solid rgb(84, 156, 91)}
 
 .top img{  margin-left: 2% ;
-width: 300px;}
+width: 280px;
+height: 70px}
 
 .container {
 padding: 0px ;  
@@ -133,18 +136,24 @@ padding: 0px 20px;background-size: cover;background: linear-gradient(to right, #
 max-width: 1500px;
 margin: 0 auto;}
 
-.banner-news a { display: inline-block;
+.banner-news li { display: inline-block;
 padding: 10px}
 
 .banner-news  a{ 
 font-size: 20px;
 font-family: 'Stick No Bills', sans-serif;
   color: white;
-  text-decoration: none;}
+  text-decoration: none;
+}
 
-.banner-news a:hover{ 
-background: rgb(17, 132, 110) ;
+.banner-news li:hover{ 
+background: rgb(7, 12, 10) ;
 	color: rgb(17, 232, 110)}
+
+
+.banner-news li:hover >a{ 
+	color: rgb(17, 232, 110)}
+
 
 /* Banner de noticias*/
 
@@ -179,8 +188,6 @@ padding: 10px 5px;
 border-radius: 20px;
 cursor: pointer;}
 
-
-.not:hover > .capa h6{color: rgb(17, 232, 210)}
 
 
 .not .capa a{text-decoration:none;
@@ -320,11 +327,7 @@ padding: 10px 15px}
 
 
  
-.artic:hover > .informacion a h3{color:rgb(15, 158, 103);}
-
-.artic:hover >  .img a h6
-{color:rgb(15, 198, 103);}
-
+.artic:hover   .img a h6{color:rgb(15, 198, 103);}
 
 
 .informacion {margin-left: 20px;
@@ -334,10 +337,9 @@ color: black;
   text-decoration-color: none;
 max-width: 900px}
 
-.informacion a {
-  color: black;  
-  text-decoration: none  }
-  
+
+  .informacion a{text-decoration: none;}
+
   .informacion a h3 {
   font-family: 'Stick No Bills  ', sans-serif;
   color: black;
@@ -354,13 +356,15 @@ max-width: 900px}
     padding-top: 10px;
     width: 90%; 
 	max-width: 800px;
-font-family:didactgothic}
+font-family:didactgothic;
+padding-bottom: 10px}
     
-  .informacion h6{font-size:16px;
-    color:rgba(64,97,117,1);
-    padding: 10px 0vh;
-    font-family:didactgothic}
+  .informacion a{font-size:18px;
+ font-family:TypoQuik_Light_Italic_Demo;
+ color:rgba(64,127,97,1)}
     
+.informacion a:hover{border-bottom: 1px solid rgba(64,127,97,1);}
+   
 
 .late{ margin: 20px auto; width: 55% ;
 margin-left: 45%}
@@ -488,14 +492,10 @@ letter-spacing: 1px}
      	text-decoration: none;
      	display: flex;
      	align-items: center;
-     	justify-content: center;
-     }
+     	justify-content: center;}
 
-
-.sobre a:hover{ color: red;}
-
-
-
+.sobre a:hover{ border-bottom:1px solid white;
+width:220px }
 
 .sobre p{ color: #ffff ;
 		font-size: 18px; line-height: 1.3;
@@ -531,9 +531,11 @@ margin-top: -10px}
 	color: white;
 	background:#0a1a2a;
 padding: 10px;
-border-radius: 50%}
+border-radius: 50%;
+width: 100%;
+border-bottom: 1px solid white}
 
-.red-social a:hover{color :red;}
+.red-social a:hover{color:green;}
 	
  .grupo2{
 background: rgb(30, 37, 37);
@@ -604,8 +606,7 @@ text-decoration: none;
 
 .social a:hover{
   cursor: pointer;
-	color: red;
-transition: all 1s ease;}
+  transition: all 1s ease;}
 
 .cabezera{; display: flex; 
 color: #ffff;  justify-content: center;
@@ -613,7 +614,8 @@ margin: 0px auto; padding: 100px 0px;
 background: rgb(17, 19, 17);border-bottom: 5px solid rgb(84, 156, 91)}
 
 .top img{  margin-left: 2% ;
-width: 200px;}
+width: 200px;
+height: 50px}
 
 
 .top p{padding: 5px;
@@ -668,23 +670,19 @@ margin: 0px}
 	100%{margin-left:-300%} 
 	}
 
-.banner-news{	; background-size: cover;
-		padding: 5px}
+.banner-news ul{margin-left: 0%}
 
-.banner-news ul{margin-left: 2%}
+
+.banner-news li { display: inline-block;
+padding: 10px 5px}
 
 .banner-news a { 
-display: inline-block;
-padding: 5px}
+display: inline-block;}
 
 .banner-news  a{ 
 font-size: 15px;
   color: white;
   text-decoration: none;}
-
-.banner-news a:hover{ 
-background: rgb(17, 132, 110) ;
-	color: rgb(17, 232, 110)}
 
 	/* Banner de noticias*/
 
@@ -693,7 +691,7 @@ grid-template-columns: repeat(2,1fr);
 grid-gap: 2vh;
   width: 99%;
   margin: 0 auto;
-max-width: 900px}
+max-width: 800px}	
 
 .not{	width: 130%;
     position: relative;
@@ -710,10 +708,10 @@ margin-left: 3%}
 .not .capa h6{
 font-size: 17px;
 background: rgba(64,97,117,1);
-width: 160px;
+width: 120px;
 margin-top: 100px;
   color: white;
-padding: 10px 5px}
+padding:  5px}
 
 .not .capa a{text-decoration:none;
   color: white;}
@@ -722,8 +720,7 @@ padding: 10px 5px}
 font-size: 15px;
 background: none;
 margin-top: 10px ;
-width:90%;
-padding: 0vh}
+width:90%;}
 
 .not .capa a h6:hover{
 color: rgb(17, 232, 210)}
@@ -841,7 +838,6 @@ color: black;
   margin-top: 10px}
 
 .informacion a {
-  color: black;  
   text-decoration: none  }
   
   .informacion a h3 {
@@ -857,8 +853,7 @@ color: black;
     padding-top: 10px;
     width: 95%; }
     
-  .informacion h6{font-size:15px;
-    padding: 10px 0vh;}
+  .informacion a{font-size:15px;}
 
   .late{ margin: 20px auto; width: 50% ;
 margin-left: 50%}
@@ -970,7 +965,8 @@ margin-bottom: 5px}
      	justify-content: center;}
 
 
-.sobre a:hover{ color: red;}
+.sobre a:hover{ border-bottom:1px solid white;
+width:150px }
 
 
 .sobre p{ color: #ffff ;
@@ -1001,7 +997,7 @@ height: 60px}
 	margin: 0 auto; 
 	color: white;}
 
-.red-social a:hover{color :red;}
+.red-social a:hover{color:green;}
 	
  .grupo2{background-color: #0a1a2a;
  	padding: 20px}
@@ -1014,7 +1010,8 @@ height: 60px}
  	align-items: center;
  	justify-content: center;
 	width: 70%;
-	text-align: center;}
+	text-align: center;
+}
 
 
 
@@ -1060,11 +1057,10 @@ padding: 0px 3px}
 height: 50px}
 
 .top h4{  
-		padding: 3px;
-	width:100px; 
+padding: 3px;
+width:100px; 
 font-size: 15px ;
-border-radius:0px 20px 20px 0px 	;
-	 }
+border-radius:0px 20px 20px 0px}
 
 .social {display: flex; margin-left: 1% ;
 		margin-top:0vh;}
@@ -1073,7 +1069,6 @@ border-radius:0px 20px 20px 0px 	;
  text-decoration: none;
 font-size: 25px; 
 padding: 5px;}
-
 
 .container {  margin: 0 auto;
 align-items: center; justify-content: center;
@@ -1092,8 +1087,6 @@ list-style: none;
 height: 250px}
 
 
-
-
 .ul-slider li img{ width: 100vw;
 	height: 250px;
 position:center}
@@ -1102,7 +1095,7 @@ position:center}
 max-width: 480px}
 
 .banner-news li { display: inline-block;
-padding: 15px 0px}
+padding:10px 2px}
 
 .banner-news li a{  
 font-size: 15px;
@@ -1135,7 +1128,8 @@ background: rgba(64,97,117,0.5);
 width: 140px;
 margin-top: 20px;   
   color: white;
-  padding: 10px;}
+  padding: 10px;
+padding-bottom: 10px}
 
 .not .capa a{text-decoration:none;
   color: white;}
@@ -1147,10 +1141,12 @@ margin-top: 10px ;
 width:90%;
 padding: 0;}
 
-.not .capa p{
+
+.not .capa a{font-family: Verdana;
 font-size: 14px;
-  margin-top:1vh ;
-  color: white;}
+color: white;
+margin-top: 10px;
+display: flex;}
 
 .not:hover {transition: transform .2s;  
 transform: scale(1.02); }
@@ -1159,7 +1155,7 @@ transform: scale(1.02); }
 grid-template-columns: repeat(2,1fr);
 grid-gap: 10px;
 margin: 0 auto;
-width: 98vw;
+width: 97%;
 height: 130px}
 
 .notd1{
@@ -1170,7 +1166,7 @@ position: relative;
 .notd1 a img{width: 100%;
 position: absolute;
 ;height: 130px;
-max-width: 200px}
+max-width:100%}
 
 .capa2{position: relative;
 }
@@ -1208,7 +1204,7 @@ margin: 10px auto}
 
 .all{ display: block; 
 width: 90%;
-max-width: 400px;
+max-width: 350px;
 margin: 0 auto}
 
 .artic {display: block; 
@@ -1224,7 +1220,7 @@ width:100%;
   
 .artic a img {display: block; 
 		width:100%; margin-bottom: 10px;
-		height: 140px;}
+		height: 150px;}
 				
 .informacion {margin-left: 0VH;
 color: black;margin-top:0px;
@@ -1233,7 +1229,6 @@ color: black;margin-top:0px;
   text-decoration-color: none;}
 
 .informacion a {
-  color: black;
   padding: 10px 0vh;  
   text-decoration: none  }
   
@@ -1249,10 +1244,8 @@ color: black;margin-top:0px;
     padding: 15px 0vh;
     width:100%; }
 
-  .informacion h6{font-size:17px;
-    padding: 0vh;
-    font-family: Monospace;
-width: 80%}
+  .informacion a{font-size:17px;
+}
 
   .late{ margin: 20px auto; width: 95% ;
 margin-left: 0%
@@ -1337,7 +1330,9 @@ height: 290px}
 
 
 .grupo11{display: grid; 
-		grid-template-columns: repeat(1,1fr);}
+		grid-template-columns: repeat(1,1fr);
+		max-width: 380px;
+		margin: 0 auto}
 
 
 
@@ -1362,8 +1357,8 @@ margin-top: 1vh}
 		font-size: 15px; line-height: 1; 
      	text-align: center;
      	padding: 0px;
-     	width: 80%;
-     	margin: 1vh auto}
+     	width: 70%;
+     	margin: 10px auto}
 
 .sobre .red-social{ display: flex; justify-content: center;
 align-items: center; margin: 0 auto;
@@ -1375,9 +1370,8 @@ align-items: center; margin: 0 auto;
 	align-items: center;
 	 margin: 0 auto;
 	  padding: 10px;
-	  font-size: 35px;
-  border: none;
-}
+	  font-size: 30px;
+  border: none;}
 
 .top .social {  right: 1vw;
 	display: flex;
@@ -1408,7 +1402,8 @@ align-items: center; margin: 0 auto;
  	align-items: center;
  	justify-content: center;
 	width: 95%;
-	text-align: center; }
+	text-align: center; 
+max-width: 400px}
 
  .grupo2 h6 a{
  	font-size: 18px;
@@ -1428,7 +1423,9 @@ padding: 0px 2px}
  	justify-content: center;
 	width: 96%;
 	text-align: center; 
-	padding: 0px}
+	padding: 0px;
+ 
+max-width: 300px}
 
 
  .grupo2 h6 a:hover{
