@@ -1,0 +1,555 @@
+*{margin: 0; padding: 0;
+box-sizing: border-box;}
+
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Poor+Story&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap');
+
+html , body{ max-width: 100% !important;
+    overflow-x: hidden !important;}
+
+html::-webkit-scrollbar{width: 0.5vh ;}
+
+html::-webkit-scrollbar-thumb{
+	background:#006A4E;}
+
+
+html::-webkit-scrollbar-thumb:hover{
+	background:rgb(80, 105, 124);}
+
+body{width:;
+margin: 0 auto;}
+
+@font-face{font-family:TypoQuik_Light_Italic_Demo;
+src:url(../font/TraditionSansXLight.otf)}
+
+@font-face{font-family:didactgothic;
+src:url(../font/didactgothic.ttf)}
+
+
+
+.top {	 background-size: cover;
+	background: #2C3E50; 
+background: linear-gradient(to right, #00554E, #2C3E50);}
+
+.head{	 max-width: 1500px;
+margin: 0 auto;
+grid-template-columns: repeat(3,1fr); 
+display: grid; }
+
+.top h4{font-family: 'Carter One', cursive; 
+		padding: 5px;;
+		width:120px;
+	 border-radius: 20px  	;
+	 font-size: 18px ;
+	background: rgb(85,145,106);
+background: linear-gradient(0deg, rgba(85,145,106,1) 0%, rgba(65,222,193,1) 100%);}
+
+
+
+.top p{font-family: 'Stick No Bills', sans-serif; 
+		padding: 10px;
+	 font-size: 20px;
+	 padding-top: 30px ;
+	 text-align: center;
+	 color: white;
+	 width: 300px;
+	 margin: 0 auto}
+
+
+.top .social { 
+	display:flex;
+padding:20px 10px;
+text-align: right;
+justify-content:right;
+align-items:right}
+
+
+.social a{ color:white; 
+text-decoration: none;
+		font-size:30px;
+		padding:10px }
+
+.social a:hover{
+  cursor: pointer;
+	color:green;
+transition: all 1s ease;}
+
+.cabezera{; display: flex; 
+color: #ffff;  justify-content: center;
+margin: 0px auto; padding: 100px 0px; 
+background: rgb(17, 19, 17);border-bottom: 5px solid rgb(84, 156, 91)}
+
+.top img{  margin-left: 2% ;
+width: 300px;
+padding: 0px}
+
+
+/*Noticia-1*/
+
+
+
+.noticia1{ background: url(../img/01.jpg);
+background-size:100% 650px;
+	 height: 650px
+	 ;width: 100%;
+		margin: 0 auto;
+		background-repeat: no-repeat; 
+position: relative;
+}
+
+
+
+/*Noticia-2*/
+
+
+
+.noticia2{ background: url(../img/02.jpg);
+background-size:100% 650px;
+	 height: 650px
+	 ;width: 100%;
+		margin: 0 auto;
+		background-repeat: no-repeat; 
+position: relative;
+}
+
+/*Noticia-4*/
+
+.noticia4{ background: url(../img/04.jpg);
+background-size:100% 650px;
+	 height: 650px
+	 ;width: 100%;
+		margin: 0 auto;
+		background-repeat: no-repeat; 
+position: relative;
+}
+
+/*Noticia-5*/
+
+.noticia5{ background: url(../img/05.jpg);
+	background-size:100% 650px;
+	 height: 650px
+	 ;width: 100%;
+		margin: 0 auto;
+		background-repeat: no-repeat; }
+
+
+/*titulo*/
+
+.titulo-noticia{padding-top: 250px;
+width: 90%;
+margin: 0 auto;
+color: white;
+max-width: 1300px}
+
+.titulo-noticia h6{
+ 		padding:0px auto ; 
+ 		font-size: 45px; 
+ 		font-family: 'Stick No Bills', sans-serif;
+  margin-top:0px;
+letter-spacing: 3px;
+width: 70%;}
+
+.titulo-noticia p{
+	font-size:23px;
+    padding: 20px 0px;
+    width: 80%; font-family: Verdana;
+max-width: 800px;
+margin-bottom:20px;}
+
+.titulo-noticia a{
+	font-size:20px;
+    width: 100%; 
+    font-family: monospace;
+color: green;
+text-decoration: none;
+background: rgba(0,0,0,0.8);
+padding:10px;
+border-radius: 20px;
+margin-top: 10px;}
+
+
+.titulo-noticia a:hover{
+	border-bottom: 1px solid white}
+
+
+
+
+/*cuerpo*/
+.texto-cuerpo{width: 85%;
+margin: 10px auto;
+max-width: 1300px;
+margin-top: 30px}
+
+.texto-cuerpo h3{ 
+ 		font-size: 30px; 
+ 		font-family: 'Stick No Bills', sans-serif;
+  margin-top:40px;
+letter-spacing:1px;
+color: green;
+margin-bottom: 20px;
+text-align: center;}
+
+
+.texto-cuerpo h6{font-family:TypoQuik_Light_Italic_Demo; 
+ font-size: 25px; 
+margin-top: 40px;
+padding-left: 20px;
+color: green; }
+
+
+.texto-cuerpo  p{
+	font-size:20px;
+    padding: 10px 0px;
+    width: 100%; 
+	line-height: 1.5;
+font-family:didactgothic}
+
+.texto-cuerpo  span{
+	font-size:20px;
+    padding: 10px 0px;
+    width: 100%; 
+	line-height: 1.5;
+font-family:monospace;
+}
+
+.texto-cuerpo  a{
+	font-size:20px;
+    width: 100%; 
+	line-height: 1.5;
+font-family:didactgothic;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+
+
+.texto-cuerpo  p b{
+	font-size:18px;
+    padding: 10px 0px;
+    width: 100%; 
+	line-height: 1.5;
+color: green;
+font-family:didactgothic}
+
+.datos-exp ul li{
+font-family:didactgothic;;
+font-size: 20px;
+width: 800px;margin: 20px auto}
+
+.texto-cuerpo .img1 {margin: 50px 10px}
+
+.texto-cuerpo img{width: 70%;
+height: 300px;
+margin: 30px auto
+; max-width: 700px;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+
+
+
+.texto-cuerpo .img1 p{
+	text-align: center;
+	font-size:18px;
+    width: 100%; font-family:cursive;
+	background: rgb(110,110,110);
+	width: 70%;
+; max-width: 700px;
+margin: 10px auto;
+margin-top: -30px;;
+font-family:didactgothic;
+padding:10px;
+color: white}
+
+.texto-cuerpo .tor img{width: 70%;
+height: 400px;
+margin: 30px auto
+; max-width: 700px;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+
+.texto-cuerpo .tor img:hover{
+transform: scale(1.3);
+transition: all 2s ease
+}
+
+
+
+.texto-cuerpo cite {color: black;
+font-family:TypoQuik_Light_Italic_Demo;; 
+ font-size: 20px;
+text-align: center;
+justify-content: center;
+align-items: center;
+margin: 20px auto;
+width: 500px}
+
+
+.texto-cuerpo cite a {color: black;
+font-family:TypoQuik_Light_Italic_Demo;; 
+ font-size: 20px;
+text-align: left;
+
+justify-content: left;
+align-items:left;
+margin: 20px 0px}
+
+.texto-cuerpo .conclusion {color: black;
+font-family:TypoQuik_Light_Italic_Demo;; 
+ font-size: 20px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 20px 0px}
+}
+
+
+
+.texto-cuerpo .conclusion h3{
+margin-bottom: 10px;}
+
+
+.fuente{background: rgba(0,0,0,0.9);
+	background: rgb(64,97,117);padding: 20px;
+color:white;
+font-family:TypoQuik_Light_Italic_Demo;
+border-radius: 20px;
+width: 100%;
+max-width: 1000px ;
+margin: 0 auto;
+margin-top: 50px;
+border:1px solid rgb(19, 127, 91) }
+
+
+.fuente h4 {text-decoration: none;
+font-family:TypoQuik_Light_Italic_Demo;
+font-size: 25px;
+margin: 20px;
+border-bottom: 1px solid white 
+;width: 100px;
+padding: 0px 10px}
+
+.fuente a{text-decoration: none;
+;font-family:TypoQuik_Light_Italic_Demo;
+font-size:20px;
+color: white;
+padding: 0px 10px;
+border-bottom: 2px solid transparent;
+display: block;
+text-align: left;}
+
+
+.fuente a:hover{text-decoration: none;
+;font-family:TypoQuik_Light_Italic_Demo;
+font-size: 20px;
+border-bottom: 2px solid  #36f7ca;
+color: #36f7ca;}
+
+iframe{width: 80%;
+height: 400px;
+margin: 20px auto;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+/*otros Articulos*/
+
+.articulos-r{width: 90%;
+max-width: 1400px;
+margin: 20px auto}
+
+.articulos-r h5{text-align: center;
+color:green;
+font-size: 35px; 
+font-family: 'Stick No Bills', sans-serif;
+letter-spacing: 1px;
+border-bottom: 1px solid green ;
+margin-bottom: 20px;
+width: 60%;
+margin: 30px auto; 
+padding-top: 30px
+}
+
+.relacionados{display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-gap: 20px}
+
+.relacionados div{  ;
+border: 1px solid black;
+border-radius: 20px;
+height: 200px;
+padding: 30px 10px;}
+
+
+/*Articulos de ciber criemen*/
+.article1{ background: url(../img/01.jpg);
+	 background-size:100% 100%;;
+	 height:100%;
+	 ;width: 100%;}
+
+.article4{ background: url(../img/04.jpg);
+	 background-size:100% 100%;;
+	 height:100%;
+	 ;width: 100%;}
+
+.article5{ background: url(../img/05.jpg);
+	 background-size:100% 100%;;
+	 height:100%;
+	 ;width: 100%;}
+
+
+
+.relacionados div a{ color: white; 
+	text-decoration: none;
+	background: black}
+
+.relacionados div h6{text-align: left;
+		 color:white;
+ 		padding:0px auto ; 
+ 		font-size: 20px; 
+ 		font-family: 'Stick No Bills', sans-serif;
+  margin-top:50px;
+letter-spacing: 1px;;
+margin-bottom: 10px;}
+
+
+.relacionados div p{
+font-family:TypoQuik_Light_Italic_Demo;}
+
+.relacionados div :hover{ 
+	color:green; 
+	text-decoration: none;}
+
+
+.grupo1{
+background: rgba(64,97,117,1);
+}
+
+.grupo11{display: grid;
+	 grid-template-columns: repeat(3,1fr);
+	max-width: 1800px ;
+margin: 0 auto;
+padding: 10px 0px}
+
+.sobre{ padding: 10px 0px;	
+		width: 100%;
+		 justify-content: center;
+		 margin: 10px 0px}
+
+
+.sobre h6 {text-align: center;
+		 color: #fff;
+ 		padding:0px auto ; 
+ 		font-size: 25px; 
+ 		font-family: 'Stick No Bills', sans-serif;
+  margin-top:0px;
+letter-spacing: 1px}
+
+
+.sobre a{ color: #ffff ;
+		font-size: 20px; line-height: 1;
+	font-family:TypoQuik_Light_Italic_Demo; 
+     	text-align: center;
+     	margin: 10px auto;
+     	text-decoration: none;
+     	display: flex;
+     	align-items: center;
+     	justify-content: center;
+     }
+
+
+.sobre a:hover{ color: red;}
+
+
+
+
+.sobre p{ color: #ffff ;
+		font-size: 18px; line-height: 1.3;
+
+font-family:didactgothic; 
+     	text-align: center;
+     	margin: 10px auto;
+     	width: 100%;}
+
+.sobre img{ 
+margin: 0vh auto;
+width: 300px ;
+display: flex;justify-content: center;
+align-items: center;;
+height: 100px;
+margin-top: -10px}
+		 
+.sobre .red-social{ display: grid;
+	grid-template-columns: repeat(5,1fr);
+	padding:  20px;
+		margin: 0 auto;
+		justify-content: center;
+		align-items: center;
+		 margin: 0 auto;
+		 width: 60%; color:white;
+		 grid-gap: 5px}
+
+.sobre .red-social a{
+		; font-size: 30px; 
+	justify-content: center;
+	align-items: center; 
+	margin: 0 auto; 
+	color: white;
+	background:#0a1a2a;
+padding: 10px;
+border-radius: 50%}
+
+.red-social a:hover{color :red;}
+	
+ .grupo2{
+background: rgb(30, 37, 37);
+ 	;padding: 20px 10px}
+
+
+.grupo22{max-width: 1600px ;
+margin: 0 auto}
+
+ .grupo2 h6{
+ 	font-size: 18px;
+ 	color: white;
+ 	text-align: left; 
+	font-family:TypoQuik_Light_Italic_Demo;
+	width: 90%;
+	margin-left: 2%}
+
+
+ .grupo2 h6 a{
+ 	font-size: 20px;
+ 	color: green;
+ 	text-align: left; 
+	font-family:TypoQuik_Light_Italic_Demo;
+text-decoration: none;}
+
+
+
+ .grupo2 h6 a:hover{
+ 	font-size: 20px;
+ 	color:red;
+ 	text-align: left; 
+	font-family:TypoQuik_Light_Italic_Demo;
+text-decoration: none;}
+	
+ .grupo2 p{
+ 	font-size: 15px;
+ 	color: white;
+	font-family:TypoQuik_Light_Italic_Demo;
+	padding: 0px;
+	width: 60%;
+	letter-spacing: 2px;
+	margin-left: 2%;
+	max-width: 800px}
+
+
+
+
