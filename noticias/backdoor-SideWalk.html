@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+		<title>Backdoor SideWalk</title>
+
+<meta charset="utf-8">
+	<meta name="autor " content="@rhzyv1">	
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<meta name="description" content="cursos ciberseguridad">
+	
+	<!---logo---->
+	<link rel="icon" type="text/css" href="../img/nun.png">
+	<!---Iconos---->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!---animations---->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	</head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=6.0, minimum-scale=1.0">
+	<!----letasstyle---->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Poor+Story&display=swap" rel="stylesheet">	
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap" rel="stylesheet">
+
+
+<header >
+
+<div class="top">
+<div class="head">
+
+	<div>
+
+
+		<h4>
+		<i class="fa fa-"></i>@ Last News</h4>
+		<a href="https://liquidmatrix.netlify.app"
+		aria-label="liquidmatrix">
+		<img src="../img/bannerlogo-6.png"  alt="logo-de-liquit-matrix"></a>
+	</div>	
+	<p>Noticias, opiniones y análisis de la comunidad de seguridad informatica.</p>
+	<div class="social">
+		<a href="https://www.facebook.com/liquidmatrixdigest/" aria-label="facebook" ><i class="fa fa-facebook"></i></a>
+		
+		<a href="https://twitter.com/liquidmatrix" aria-label="twitter"><i class="fa fa-twitter"></i></a>
+
+		<a href="https://www.youtube.com/channel/UCFfZEfQF0T4O_6t6YoHGW4w" aria-label="youtube"> <i class="fa fa-youtube"></i> </a>
+	
+	</div>
+</div>
+</div>
+
+<div class="noticia9" >
+	<div class="titulo-noticia">
+
+
+<h1> Análisis de la variante para Linux del backdoor SideWalk</h1>
+<p>El equipo de investigación de ESET descubrió otra herramienta del ya extenso arsenal de herramientas que utiliza el grupo de APT SparklingGoblin: una variante para Linux del backdoor SideWalk.</p>
+		<a href="https://www.welivesecurity.com/es/nuestros-expertos/vladislav-hrcka/" 
+		aria-label="experto welivesecurity">
+		<time datetime="14 01 2024"></time>	Vladislav hrcka • 14 Ene 2024 </a>
+		
+
+
+	</div>
+	</div>
+
+	</header>
+<body>
+	<div class="texto-cuerpo">
+
+
+<P>El equipo de investigación de ESET ha descubierto una variante para Linux del backdoor SideWalk, uno de los múltiples implantes personalizados que utiliza el grupo de APT SparklingGoblin. Esta variante se utilizó en un ataque contra una universidad de Hong Kong en febrero de 2021, la misma universidad que ya había sido atacada por SparklingGoblin durante las protestas estudiantiles de mayo de 2020. Originalmente llamamos a este backdoor StageClient, pero ahora nos referimos a el como SideWalk Linux. También descubrimos que un backdoor para Linux previamente conocido, Spectre RAT, documentado por primera vez por 360 Netlab, también es una variante de SideWalk Linux, ya que presenta múltiples puntos en común con las muestras que identificamos.</P>
+
+
+<p>
+Esta publicación documenta SideWalk Linux, su victimología y sus numerosas similitudes con el backdoor SideWalk originalmente descubierto.
+</p>
+<h6>Atribución</h6>
+<p>
+El backdoor SideWalk es exclusivo del grupo de APT SparklingGoblin. Además de las múltiples similitudes de código entre las variantes para Linux de SideWalk y varias herramientas de SparklingGoblin, una de las muestras de SideWalk Linux usa una dirección C&C (66.42.103[.]222) que el grupo utilizó anteriormente.
+</p>
+<p>Teniendo en cuenta todos estos factores, atribuimos con gran confianza SideWalk Linux al grupo de APT SparklingGoblin.
+</p>
+
+<h6>Victimología</h6>
+<p>
+Si bien en VirusTotal hay varias muestras de SideWalk Linux, tal como las conocemos ahora, en nuestra telemetría hemos encontrado solo una víctima comprometida con esta variante de SideWalk: una universidad de Hong Kong que, en medio de protestas estudiantiles, había sido atacada previamente por SparklingGoblin (usando el loader Motnug y el backdoor CROSSWALK) y Fishmonger (usando los backdoor ShadowPad y Spyder). Tenga en cuenta que en ese momento pusimos esa actividad bajo la denominación más amplia de Winnti Group.
+</p>
+</p>
+<h3>El camino hacia Sidewalk Linux</h3>
+<p>
+SideWalk, un backdoor que describimos por primera en su versión para Windows en agosto de 2021, es una herramienta multipropósito que permite cargar módulos adicionales enviados desde el servidor de C&C. Hace uso de Google Docs como dead-drop resolver, y de Cloudflare como su servidor de C&C. Es capaz de manejar adecuadamente la comunicación detrás de un proxy.
+</p>
+<p>
+Actualmente se desconoce la cadena de compromiso, pero creemos que el vector de ataque inicial podría haber sido la explotación de una vulnerabilidad. Esta hipótesis se basa en el artículo de 360 ​​Netlab que describe la botnet Spectre apuntando a cámaras IP y dispositivos NVR y DVR, y el hecho de que la víctima de Hong Kong usó un servidor de WordPress vulnerable, ya que hubo muchos intentos de instalar varios webshells.
+</p>
+<p>
+
+Documentamos por primera vez la variante para Linux de SideWalk como StageClient el 2 de julio de 2021 , sin establecer la conexión en ese momento con SparklingGoblin y su backdoor personalizado SideWalk. El nombre original se utilizó debido a las repetidas apariciones de la string StageClient en el código.
+</p>
+
+<p>Mientras investigamos más a fondo StageClient, nos encontramos con una publicación de 360 Netlab sobre la botnet Spectre. Esa publicación describe un backdoor modular para Linux con una configuración flexible que utiliza una variante del algoritmo de cifrado ChaCha20, básicamente un subconjunto de la funcionalidad de StageClient. Una inspección posterior confirmó esta hipótesis; además, encontramos una gran superposición en la funcionalidad, la infraestructura y los símbolos presentes en todos los binarios.
+</p>
+<h6>Comparamos la muestra de StageClient</h6>
+<p>
+	E5E6E100876E652189E7D25FFCF06DE959093433 con las muestras de Spectre 7DF0BE2774B17F672B96860D013A933E97862E6C y encontramos numerosas similitudes, algunas de las cuales enumeramos a continuación.</p>
+<p>
+Primero, hay una superposición en los comandos de C&C. Segundo, las muestras tienen la misma estructura de configuración y método de cifrado,
+</p>
+
+<img src="img-noticias/back1.png">
+
+<p>Además, los módulos de las muestras son administrados casi de la misma manera y la mayoría de las interfaces son idénticas; los módulos de StageClient solo necesitan implementar un handler adicional, que es para cerrar el módulo. Tres de los cinco módulos conocidos son casi idénticos.
+</p>
+
+
+
+<p>
+Por último, pudimos ver sorprendentes superposiciones en los protocolos de red de las muestras comparadas. Una variante de ChaCha20 es utilizada dos veces para el cifrado con compresión LZ4 de la misma manera. Tanto StageClient como Spectre crean varios hilos (consulte la Figura 3 y la Figura 4) para administrar el envío y la recepción de mensajes asincrónicos junto con los latidos del corazón.</p>
+
+
+
+
+<p>A pesar de todas estas sorprendentes similitudes, hay varios cambios. Los más destacables son los siguientes:
+</p>
+<ul>
+<li>Los autores cambiaron del lenguaje C a C++. Se desconoce el motivo, pero debería ser más fácil implementar una arquitectura modular de este tipo en C++ debido a su compatibilidad con polimorfismos.</li>
+<li>
+Se agregó una opción para intercambiar mensajes a través de HTTP (consulte la Figura 5 y la Figura 6).</li>
+
+<li>
+Los plugins descargables fueron reemplazados por módulos precompilados que cumplen el mismo propósito; se agregaron varios comandos nuevos y dos módulos nuevos.</li>
+
+</ul>
+
+<p>Se agregó el módulo TaskSchedulerMod, que funciona como una utilidad cron integrada. Su tabla cron se almacena en la memoria; los trabajos se reciben a través de la red y se ejecutan como comandos de shell.
+Se agregó el módulo SysInfoMgr, que proporciona información sobre el sistema subyacente, como la lista de paquetes instalados y detalles del hardware.
+</p>
+<p>
+<h6>
+Arquitectura de software
+</h6>
+<p>
+Una particularidad de SideWalk es el uso de múltiples subprocesos para ejecutar una tarea específica. Notamos que en ambas variantes hay exactamente cinco hilos ejecutados simultáneamente, cada uno de ellos con una tarea específica. 
+</p>
+
+<img src="img-noticias/back2.png">
+
+<ul>
+<li>StageClient::ThreadNetworkReverse
+
+Si aún no se ha establecido una conexión con el servidor de C&C, este subproceso intenta recuperar periódicamente la configuración del proxy local y la ubicación del servidor de C&C del dead-drop resolver. Si el paso anterior fue exitoso, intenta iniciar una 
+conexión con el servidor C&C.
+</li>
+
+ <li>Si el backdoor no recibe un comando en la cantidad de tiempo especificada, este hilo puede terminar la conexión con el servidor C&C o cambiar a un modo de “suspensión” que introduce cambios menores en el comportamiento.</li>
+
+<li>
+StageClient::ThreadPollingDriven
+<br>
+Si no hay otros datos en cola para enviar, este subproceso envía periódicamente un comando de latido al servidor C&C que además puede contener la hora actual.</li>
+</ul>
+<h6>
+StageClient::ThreadBizMsgSend.
+</h6>
+
+<ul>
+<li>Este hilo comprueba periódicamente si hay datos para enviar en las cola de mensajes utilizada por todos los demás hilos y, si es así, los procesa.
+</li>
+
+<li>
+StageClient::ThreadBizMsgHandler
+Este hilo comprueba periódicamente si hay mensajes pendientes recibidos del servidor de C&C y, en caso afirmativo, los gestiona. </li>
+
+</ul>
+
+<h6>
+Suma de verificación
+</h6>
+
+<p>Primero, antes de descifrar, se verifica la integridad de los datos. Esta verificación es similar en ambas implementaciones de SideWalk  se computa un hash MD5 en el nonce de ChaCha20 concatenado con los datos de configuración cifrados. Este hash luego se compara con un valor predefinido y, si no es igual, SideWalk sale.</p>
+
+
+<h3>Protocolo de comunicación</h3>
+<h6>Serialización de datos</h6>
+<p>
+El protocolo de comunicación entre la máquina infectada y el C&C es HTTP o HTTPS, según la configuración, pero en ambos casos los datos se serializan de la misma manera. No solo la implementación es muy similar, sino que se usa la misma clave de cifrado en ambas implementaciones, lo que acentúa la similitud entre las dos variantes.
+</p>
+
+<p>Otro punto interesante es que la variante para Windows se ejecuta como shellcode totalmente independiente de la posición, mientras que la variante de Linux es una biblioteca compartida. Sin embargo, creemos que los autores del malware podrían haber dado un paso más, usando una herramienta como sRDI para convertir un PE compilado de SideWalk en shellcode en lugar de escribirlo manualmente.</p>
+
+<h6>Comandos</h6>
+<p>Solo cuatro comandos no se implementan o se implementan de manera diferente en la variante para Linux, como se muestra en la Tabla 1. Todos los demás comandos están presentes, incluso con las mismas ID.
+</p>
+
+
+<table class="table" cellspacing="0" cellpadding="0">
+	<tr>
+		<th>Command ID (from C&C)</th>
+		
+		<th>Windows variants</th>
+		<th>	Linux variants</th>
+
+	</tr>
+	<tr>
+		<td>0x7C</td>
+		<td>	Load a plugin sent by the C&C server.</td>
+		<td>Write the received data to the file located at %AllUsersProfile%\UTXP\nat\, </td>
+
+	</tr>
+	<tr>
+		<td>0x82</td>
+		<td>Collect domain information about running processes, and owners (owner SID, account name, process name, domain information).</td>
+		<td>Do nothing.</td>
+
+	</tr>
+	<tr>
+		<td>0x8C</td>
+		<td>Data serialization function.</td>
+		<td>Commands that are not handled, but fall in the default case, which is broadcasting a message to all the loaded module</td>
+
+	</tr>
+	<tr>
+		<td>0x8E</td>
+		<td>Write the received data to the file located at %AllUsersProfile%\UTXP\nat\,returned by VirtualAlloc at each execution of the malware</td>
+		<td></td>
+
+	</tr>
+</table>
+
+
+
+<h6>Plugins</h6>
+<p>
+En las variantes de SideWalk Linux los módulos están integrados; no se pueden obtener desde el servidor de C&C. Esa es una diferencia notable de la variante de Windows. Algunas de esas funcionalidades integradas, como la recopilación de información del sistema (SysInfoMgr, por ejemplo), como la configuración de la red, se realizan directamente mediante funciones dedicadas en la variante de Windows. En la variante de Windows, se pueden agregar algunos plugins a través de la comunicación con el C&C.
+</p>
+
+<img src="img-noticias/back3.png">
+
+
+<h6>
+Evasión de defensa</h6>
+
+<p>La variante para Windows de SideWalk hace todo lo posible para ocultar el objetivo de su código. Recortó todos los datos y códigos que no eran necesarios para su ejecución y cifró el resto. Por otro lado, las variantes para Linux contienen símbolos y dejan algunas claves de autenticación únicas y otros artefactos sin cifrar, lo que facilita significativamente la detección y el análisis.
+<p>
+
+<h3>Conclusión</h3>
+<p>
+El backdoor que se usó para atacar una universidad de Hong Kong en febrero de 2021 es de la misma familia que el backdoor SideWalk y, en realidad, es una variante para Linux del backdoor. Esta versión para Linux exhibe varias similitudes con su contraparte para Windows junto con varias novedades
+
+</p>
+
+	<hr>
+<article class="fuente">
+<h4>Fuentes.</h4>
+<a href="
+https://www.edapp.com/blog/es/12-cursos-gratuitos-de-ciberseguridad/"
+aria-label="curso de seguridad web">https://www.edapp.com/blog/es/12-cursos-gratuitos-de-ciberseguridad/</a>
+
+<a href="
+https://www.udemy.com/es/topic/web-security/"
+aria-label="curso de seguridad web">
+https://www.udemy.com/es/topic/web-security/</a>
+
+
+<a href="https://edu.gcfglobal.org/es/seguridad-en-internet/"
+aria-label="curso de seguridad web">https://edu.gcfglobal.org/es/seguridad-en-internet/
+</a>
+
+
+
+</article>
+	</div>
+
+</div>
+</body>
+
+
+
+<section class="articulos-r">
+		<h5>Articulos relacionados</h5>
+	<article class="relacionados">
+		<div class="article3">
+		<a href="Cursos-de-introduccion.html"
+		aria-label="Cursos-de-introduccion.html">
+		<h6>Cursos de introducción a la ciberseguridad gratuitos</h6>
+		<p>Roman Kovac • 19 Ene 2024</p>
+		</a>
+		</div>
+		<div class="article8">
+		<a href="Malware-bancario-para-Android.html"
+		aria-label="Malware-bancario-para-Android">
+		<h6>Las detecciones de malware bancario para Android aumentaron 428% el último año</h6>
+		<p>Mario Micucci • 20 Ene 2024 </p>
+		</a>
+		</div>
+		<div class="article9">
+		<a href="backdoor-SideWalk.html"
+		aria-label="backdoor-SideWalk">
+		<h6>Análisis de la variante para Linux del backdoor SideWalk</h6>
+		<p>Vladislav hrcka • 14 Ene 2024</p>
+		</a>
+		</div>
+	</article>
+</section>
+
+
+<footer>
+	<div class="grupo1">
+	<div class="grupo11">
+<div class="sobre">
+ 	
+	<img src="../img/bannerlogo-6.png" alt="logo-de-liquit-matrix">
+
+	<h6>Contactanos</h6>
+	<a href="meilto: Liquidmatrix@gmail.com" alt="logo-de-liquit-matrix" >
+	Liquidmatrix@gmail.com</a> 
+
+</div> 
+<div class="sobre">
+	<h6>Sobre nosotros</h6>
+	<p> Nuestro compromiso es brindar contenido de calidad, ofreciendo recursos y recomendaciones para protegerse en el mundo digital y aprovechar al máximo las oportunidades que ofrece la tecnología.</p>
+</div>
+
+	 	<div class="sobre">
+	 		<h6>Redes sociales</h6>
+	 	<div class="red-social">
+	 		<a href="https://www.facebook.com/liquidmatrixdigest/"><i class="fa fa-facebook" aria-label="facebook"></i></a>
+		
+		<a href="https://twitter.com/liquidmatrix"><i class="fa fa-twitter" aria-label="twitter"></i></a>
+
+		<a href="https://www.youtube.com/channel/UCFfZEfQF0T4O_6t6YoHGW4w"> <i class="fa fa-youtube" aria-label="instagram"></i> </a>
+
+		<a href="https://www.linkedin.com">	<i class="fa fa-linkedin-square" aria-hidden="true"  aria-label="linkedin"></i></a>
+
+		<a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"  aria-label="instagram"></i></a>
+	
+	 	</div>
+ </div>
+
+
+
+ </div>
+ </div>	
+
+	 <div class="grupo2">
+	 <div class="grupo22">
+	 	<h6>Copyright <a href="https://suburbiodeideas.netlify.app" aria-label="suburbiodeideas">©  Suburbio de ideas</a>  2024 </h6>
+	 	
+	 	<p>Disclaimer: </p>
+	 	
+	 	<p>La propiedad intelectual de los sitos usados para el portafolio solo es para inspiración, los derechos de imagen pertenecen a las entidades </p>
+	 </div>
+
+	 </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
