@@ -38,19 +38,42 @@ margin: 0 auto;
 grid-template-columns: repeat(3,1fr); 
 display: grid; }
 
-.top h4{font-family: 'Carter One', cursive; 
-		padding: 5px;;
-		width:120px;
-	 border-radius:20px  	;
-	 font-size: 18px ;
+.top h4{font-family: 'Stick No Bills', sans-serif;  
+		padding:5px 20px;
+	 border-radius: 20px  	;
+	 font-size:18px ;
 	background: rgb(85,145,106);
-background: linear-gradient(0deg, rgba(85,145,106,1) 0%, rgba(65,222,193,1) 100%);}
+background: linear-gradient(0deg, rgba(85,145,106,1) 0%, rgba(65,222,193,1) 100%);
+margin-left: -15px;
+width: 150px;
+}
+
+
+.top h4:hover{
+color:white;
+font-family: 'Stick No Bills', sans-serif;  
+		padding:5px 20px;
+	 border-radius: 20px  	;
+	 font-size:18px ;
+margin-left: -15px;
+width: 150px;
+background: -webkit-linear-gradient(90deg, hsla(296, 100%, 6%, 1) 0%, hsla(5, 90%, 24%, 1) 100%);
+cursor: pointer;
+background: hsla(0, 91%, 13%, 1);
+
+background: linear-gradient(180deg, hsla(0, 91%, 13%, 1) 0%, hsla(5, 100%, 36%, 1) 100%);
+
+background: -moz-linear-gradient(180deg, hsla(0, 91%, 13%, 1) 0%, hsla(5, 100%, 36%, 1) 100%);
+
+background: -webkit-linear-gradient(180deg, hsla(0, 91%, 13%, 1) 0%, hsla(5, 100%, 36%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#400303", endColorstr="#B60F00", GradientType=1 );}
+
 
 
 .top p{font-family: 'Stick No Bills', sans-serif; 
-		padding: 10px;
 	 font-size: 20px;
-	 padding-top: 30px ;
+	 padding-top:20px ;
 	 text-align: center;
 	 color: white;
 	 width: 300px;
@@ -59,7 +82,7 @@ background: linear-gradient(0deg, rgba(85,145,106,1) 0%, rgba(65,222,193,1) 100%
 
 .top .social { 
 	display:flex;
-padding:20px 10px;
+padding: 10px;
 text-align: right;
 justify-content:right;
 align-items:right}
@@ -67,12 +90,20 @@ align-items:right}
 .social a{ color:white; 
 text-decoration: none;
 		font-size:30px;
-		padding:10px }
+		padding: 10px
+}
 
-.social a:hover{
-  cursor: pointer;
-	color:green;
-transition: all 1s ease;}
+.social a .fa-facebook:hover{
+color:#3b5998;
+transition: all 1 ease-out;}
+
+.social a .fa-youtube:hover{
+color:red ;
+transition: all 1 ease-out}
+
+.social a .fa-twitter:hover{  
+color:#00acee ;
+transition: all 1 ease-out}
 
 .cabezera{; display: flex; 
 color: #ffff;  justify-content: center;
@@ -80,17 +111,17 @@ margin: 0px auto; padding: 100px 0px;
 background: rgb(17, 19, 17);border-bottom: 5px solid rgb(84, 156, 91)}
 
 .top img{  margin-left: 2% ;
-width: 240px;
-height: 70px}
+width: 200px;
+height: 50px}
 
 .container {
 padding: 0px ;  
 margin: 0 auto;
 align-items: center;   
 justify-content: center;
-width: 100%;
+width: 100vw;
 margin: auto;
-height: 475px;
+height: 450px;
 overflow: hidden;}
 
 
@@ -101,14 +132,14 @@ animation: slider 20s infinite;}
 
 .ul-slider li {
 list-style: none;
-width:99.9vw;
+width:100vw;
 padding: 0px;
 margin: 0px}
 
 .ul-slider li img{
 	height: 475px;
 position:center;
-width:99.9vw;
+width:100vw;
 padding: 0px;
 margin: 0px;}
 
@@ -130,9 +161,10 @@ margin: 0px;}
 
 .banner-news{
 background-size: cover;
-padding: 0px 20px;background-size: cover;background: linear-gradient(to right, #00554E, #2C3E50); }
+padding: 0px 10px;
+background-size: cover;background: linear-gradient(to right, #00554E, #2C3E50); }
 
-.banner-news ul{padding-left: 2%;
+.banner-news ul{padding-left: 1%;
 max-width: 1500px;
 margin: 0 auto;}
 
@@ -143,16 +175,12 @@ padding: 10px}
 font-size: 20px;
 font-family: 'Stick No Bills', sans-serif;
   color: white;
-  text-decoration: none;
-}
+  text-decoration: none;}
 
 .banner-news li:hover{ 
-background: rgb(7, 12, 10) ;
-	color: rgb(17, 232, 110)}
+background: rgb(97, 12, 10,0.87) ;
+	color: rgb(17, 132, 110)}
 
-
-.banner-news li:hover >a{ 
-	color: rgb(17, 232, 110)}
 
 
 /* Banner de noticias*/
@@ -180,15 +208,15 @@ margin-left: 3%}
 
 .not .capa h6{font-family: 'Stick No Bills  ', sans-serif;
 font-size: 25px;
-background: rgba(64,97,117,1);
-width: 170px;
+background: rgba(264,197,117,0.6);
+background: #00554E;
+width: 190px;
 margin-top: 170px;
   color: white;
-padding: 10px 5px;
-border-radius: 20px;
-cursor: pointer;}
-
-
+padding:10px  ;
+border-radius: 10px;
+cursor: pointer;
+text-align: center;}
 
 .not .capa a{text-decoration:none;
   color: white;}
@@ -199,7 +227,8 @@ background: none;
 margin-top: 10px ;
 width:90%;
 padding: 10px 0px;
-max-width: 500px}
+max-width: 500px;
+text-align: left;}
 
 .not .capa a h6:hover{
 color: rgb(17, 232, 210)}
@@ -214,7 +243,7 @@ color: rgb(17, 232, 210)}
 
 
 .not:hover {transition: transform .2s;  
-transform: scale(1.02); 
+transform: scale(1.01); 
 box-shadow: 0vh 0vh 20px black;
 border-radius: 20px}
 
@@ -228,18 +257,18 @@ position: absolute;
 ;height: 175px;
 border-radius: 20px}
 
-.capa2{position: relative;
-}
+.capa2{position: relative;}
 
 .capa2 a {text-decoration:none}
 
 .capa2 a h6{font-family: 'Stick No Bills  ', sans-serif;
 font-size: 20px;
 background: rgba(64,97,117,1);
+background: #00554E;
 width: 100%;
   color: white;
   padding: 10px;
-border-radius: 20px}
+border-radius: 10px;}
   
 .capa2 a h6:hover{color: rgb(17, 232, 210)}
 
@@ -279,25 +308,10 @@ border-radius: 20px}
 
 .all{ display:grid;
 	grid-template-columns: repeat(2,1fr);
-	 margin-top: 3%;
+	 margin-top: 1%;
 	width: 98%;
 	margin: 0 auto;
 max-width: 1500px}
-
-.ne{max-width: 1500px;
-margin: 0 auto}
- 
-	.ne h5 {color:rgb(15, 198, 103);
-	 background: rgba(50, 55, 55,1);
-	 text-align: center;
-	 padding:10px ;
-	 border-radius:20px;
-	margin: 20px;
-width:200px;
-font-size: 20px;
-font-family: 'Stick No Bills  ', sans-serif;
-margin-left: 5%;
-margin-top: 1%}
 
 
 .artic {display:flex; 
@@ -306,7 +320,8 @@ margin-top: 1%}
   padding: 0;cursor: pointer;}
 
 .artic .img a{text-decoration: none;
-cursor: pointer;}
+cursor: pointer;
+border-radius: 10px}
 
 .artic .img a h6{font-family: 'Stick No Bills  ', sans-serif;
 font-size: 22px;
@@ -327,7 +342,8 @@ padding: 10px 15px}
 
 
  
-.artic:hover   .img a h6{color:rgb(15, 198, 103);}
+.artic:hover .img a h6{color:rgb(115, 198, 103);
+color: rgb(197, 12, 10,1)}
 
 
 .informacion {margin-left: 20px;
@@ -346,8 +362,7 @@ max-width: 900px}
     font-size: 23px;
     text-decoration:none ;
     width: 93%; 
-    	max-width: 700px;
-    	margin-top: 10px }
+    	max-width: 700px;}
 
  .informacion a h3:hover{color:rgb(15, 198, 103);}
  
@@ -359,9 +374,9 @@ max-width: 900px}
 font-family:didactgothic;
 padding-bottom: 10px}
     
-  .informacion a{font-size:18px;
- font-family:TypoQuik_Light_Italic_Demo;
- color:rgba(64,127,97,1)}
+  .informacion a{font-size:20px;
+ color:rgba(64,157,18,1);
+  font-family: 'Stick No Bills  ', sans-serif;}
     
 .informacion a:hover{border-bottom: 1px solid rgba(64,127,97,1);}
    
@@ -399,7 +414,7 @@ align-items: center;}
 		color: rgb(226, 251, 240) }
 
 .lado span li{ font-size: 20px; 
-	color:#52B830 ;
+		color:#52B830 ;
 	 padding: 5px 0vh;
 	 margin: 5px 0vh ;
 	 list-style: none;
@@ -460,7 +475,8 @@ font-family:didactgothic;
   font-size:20px}
 
 .grupo1{
-background: rgba(64,97,117,1);
+background: rgba(54,87,117,1);
+background-size: cover;background: linear-gradient(to right, #00554E, #2C3E50); 
 }
 
 .grupo11{display: grid;
@@ -488,7 +504,7 @@ letter-spacing: 1px}
 		font-size: 20px; line-height: 1;
 	font-family:TypoQuik_Light_Italic_Demo; 
      	text-align: center;
-     	margin: 10px auto;
+     	margin: 5px auto;
      	text-decoration: none;
      	display: flex;
      	align-items: center;
@@ -498,7 +514,7 @@ letter-spacing: 1px}
 width:220px }
 
 .sobre p{ color: #ffff ;
-		font-size: 18px; line-height: 1.3;
+		font-size: 17px; line-height: 1.3;
 
 font-family:didactgothic; 
      	text-align: center;
@@ -530,23 +546,22 @@ margin-top: -10px}
 	margin: 0 auto; 
 	color: white;
 	background:#0a1a2a;
-padding: 10px;
+padding: 10px 14px;
 border-radius: 50%;
-width: 100%;
-border-bottom: 1px solid white}
+width: 50px;
+height: 50px}
 
 .red-social a:hover{color:green;}
 	
  .grupo2{
 background: rgb(30, 37, 37);
- 	;padding: 20px 10px}
-
+ 	;padding: 10px}
 
 .grupo22{max-width: 1600px ;
 margin: 0 auto}
 
  .grupo2 h6{
- 	font-size: 18px;
+ 	font-size: 20px;
  	color: white;
  	text-align: left; 
 	font-family:TypoQuik_Light_Italic_Demo;
@@ -571,14 +586,14 @@ text-decoration: none;}
 text-decoration: none;}
 	
  .grupo2 p{
- 	font-size: 15px;
+ 	font-size: 14px;
  	color: white;
 	font-family:TypoQuik_Light_Italic_Demo;
 	padding: 0px;
-	width: 60%;
+	width: 50%;
 	letter-spacing: 2px;
 	margin-left: 2%;
-	max-width: 800px}
+	max-width: 550px}
   
  @media screen and (min-width: 550px) and (max-width: 1023px) 
 {
