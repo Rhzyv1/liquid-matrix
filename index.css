@@ -38,37 +38,25 @@ margin: 0 auto;
 grid-template-columns: repeat(3,1fr); 
 display: grid; }
 
-.top h4{font-family: 'Stick No Bills', sans-serif;  
-		padding:5px 20px;
-	 border-radius: 20px  	;
-	 font-size:18px ;
-	background: rgb(85,145,106);
+.top  a{color:black;
+	text-decoration: none;}
+
+.top  a h4{
+font-family: 'Stick No Bills', sans-serif;  
+padding:5px 20px;
+border-radius: 20px;
+font-size:20px;
 background: linear-gradient(0deg, rgba(85,145,106,1) 0%, rgba(65,222,193,1) 100%);
 margin-left: -15px;
 width: 150px;
-}
+cursor: pointer;}
+
 
 
 .top h4:hover{
 color:white;
-font-family: 'Stick No Bills', sans-serif;  
-		padding:5px 20px;
-	 border-radius: 20px  	;
-	 font-size:18px ;
-margin-left: -15px;
-width: 150px;
-background: -webkit-linear-gradient(90deg, hsla(296, 100%, 6%, 1) 0%, hsla(5, 90%, 24%, 1) 100%);
-cursor: pointer;
-background: hsla(0, 91%, 13%, 1);
-
-background: linear-gradient(180deg, hsla(0, 91%, 13%, 1) 0%, hsla(5, 100%, 36%, 1) 100%);
-
-background: -moz-linear-gradient(180deg, hsla(0, 91%, 13%, 1) 0%, hsla(5, 100%, 36%, 1) 100%);
-
 background: -webkit-linear-gradient(180deg, hsla(0, 91%, 13%, 1) 0%, hsla(5, 100%, 36%, 1) 100%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#400303", endColorstr="#B60F00", GradientType=1 );}
-
+transition: 2s all ease}
 
 
 .top p{font-family: 'Stick No Bills', sans-serif; 
@@ -90,8 +78,7 @@ align-items:right}
 .social a{ color:white; 
 text-decoration: none;
 		font-size:30px;
-		padding: 10px
-}
+		padding: 10px}
 
 .social a .fa-facebook:hover{
 color:#3b5998;
@@ -105,7 +92,7 @@ transition: all 1 ease-out}
 color:#00acee ;
 transition: all 1 ease-out}
 
-.cabezera{; display: flex; 
+.cabezera{display: flex; 
 color: #ffff;  justify-content: center;
 margin: 0px auto; padding: 100px 0px; 
 background: rgb(17, 19, 17);border-bottom: 5px solid rgb(84, 156, 91)}
@@ -206,17 +193,23 @@ border-radius: 20px}
 .not .capa{position: relative;
 margin-left: 3%}
 
-.not .capa h6{font-family: 'Stick No Bills  ', sans-serif;
+.not .capa h5{
 font-size: 25px;
-background: rgba(264,197,117,0.6);
 background: #00554E;
-width: 190px;
-margin-top: 170px;
-  color: white;
+width: 190px
+;margin-top: 170px;
+  color:white;
 padding:10px  ;
 border-radius: 10px;
 cursor: pointer;
-text-align: center;}
+text-align: center;
+font-family: 'Stick No Bills', sans-serif;
+letter-spacing: 3px}
+
+.not .capa h5:hover{
+background: -webkit-linear-gradient(180deg, hsla(0, 91%, 13%, 1) 0%, hsla(5, 100%, 36%, 1) 100%);
+color:#D6DBE0;
+transition:all 3s ease}
 
 .not .capa a{text-decoration:none;
   color: white;}
@@ -319,16 +312,17 @@ max-width: 1500px}
   margin: 30px 0; 
   padding: 0;cursor: pointer;}
 
+.artic .img{border-radius: 10px}
+
 .artic .img a{text-decoration: none;
-cursor: pointer;
-border-radius: 10px}
+cursor: pointer;}
 
 .artic .img a h6{font-family: 'Stick No Bills  ', sans-serif;
 font-size: 22px;
 background: rgba(64,97,117,1);
 width:100%;
 color: white;
-padding: 10px 15px}
+padding: 10px 15px;}
  
  
 
@@ -336,15 +330,8 @@ padding: 10px 15px}
 		padding: 0px;
 		margin: 0px;
 		width:250px; 
-		height: 150px;
-		padding-top: 
+		height: 150px
 		;max-width: 500px}
-
-
- 
-.artic:hover .img a h6{color:rgb(115, 198, 103);
-color: rgb(197, 12, 10,1)}
-
 
 .informacion {margin-left: 20px;
 color: black;
@@ -539,8 +526,7 @@ margin-top: -10px}
 		 width: 60%; color:white;
 		 grid-gap: 5px}
 
-.sobre .red-social a{
-		; font-size: 30px; 
+.sobre .red-social a{font-size: 30px; 
 	justify-content: center;
 	align-items: center; 
 	margin: 0 auto; 
@@ -623,7 +609,7 @@ text-decoration: none;
   cursor: pointer;
   transition: all 1s ease;}
 
-.cabezera{; display: flex; 
+.cabezera{ display: flex; 
 color: #ffff;  justify-content: center;
 margin: 0px auto; padding: 100px 0px; 
 background: rgb(17, 19, 17);border-bottom: 5px solid rgb(84, 156, 91)}
@@ -840,7 +826,6 @@ margin-top: 15px}
 		margin: 0px;
 		width:200px; 
 		height: 100px;
-		padding-top: 
 		;max-width: 500px}
 
 
@@ -1006,7 +991,7 @@ height: 60px}
 		 width: 60%; color:white}
 
 .sobre .red-social a{
-		; font-size: 20px; 
+	font-size: 20px; 
 	justify-content: center;
 	align-items: center; 
 	margin: 0 auto; 
@@ -1025,8 +1010,7 @@ height: 60px}
  	align-items: center;
  	justify-content: center;
 	width: 70%;
-	text-align: center;
-}
+	text-align: center;}
 
 
 
@@ -1287,7 +1271,7 @@ align-items: center;}
 padding: 20px 10px;}
 
 .lado span h6{ font-size: 20px;
-	color: rgb(96, 151, 140) ; width: %;
+	color: rgb(96, 151, 140) ; 
 margin: 0 auto; justify-content: center;
 align-items: center;}
 
@@ -1305,7 +1289,7 @@ align-items: center;}
 	color: rgb(96, 51, 40) ; width: 100%;
 margin: 0 auto; justify-content: center;
 align-items: center;
-margin: 0 2%;
+margin: 0px 2%;
 	color: rgb(96, 151, 140)}
 
 .cisco p{ text-decoration: none; 
